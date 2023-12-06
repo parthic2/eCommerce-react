@@ -415,6 +415,12 @@
 }
 
 // index2.html header css
+.tp-header-middle-4__icon {
+	svg {
+		font-size: 27px;
+	}
+}
+
 .tp-header-middle-5 {
 	&__border {
 		border-bottom: 1px solid #f2f2f8;
@@ -445,7 +451,7 @@
 
 	&__search-box {
 		position: absolute;
-		top: 50%;
+		top: 44%;
 		@include mixins.transform(translateY(-50%));
 		right: 25px;
 		border: none;
@@ -835,7 +841,7 @@
 					padding-right: 20px;
 
 					svg {
-						margin-right: 3px;
+						margin-right: 10px;
 					}
 				}
 

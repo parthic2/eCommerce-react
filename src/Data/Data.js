@@ -1,4 +1,4 @@
-import { FreeShipping, MoneyBack, PaymentSecure, Support } from "../svg/svg";
+import { FreeShipping, Handmade, MoneyBack, PaymentSecure, Support, GiftsSets, Candles, Book, Cosmetics, HandyCream, PlasticGifts, SilkAccessories } from "../svg/svg";
 
 // Trends Product data
 export const tabData = [
@@ -217,23 +217,73 @@ export const testimonialData = [
 // Footer Feature data
 export const featureItems = [
     {
-      icon: <FreeShipping />,
-      title: 'Free Shipping',
-      description: 'Free shipping over $100',
+        icon: <FreeShipping />,
+        title: 'Free Shipping',
+        description: 'Free shipping over $100',
     },
     {
-      icon: <Support />,
-      title: 'Support 24/7',
-      description: 'Contact us 24 hours a day',
+        icon: <Support />,
+        title: 'Support 24/7',
+        description: 'Contact us 24 hours a day',
     },
     {
-      icon: <MoneyBack />,
-      title: '100% Money Back',
-      description: 'You have 30 days to Return',
+        icon: <MoneyBack />,
+        title: '100% Money Back',
+        description: 'You have 30 days to Return',
     },
     {
-      icon: <PaymentSecure />,
-      title: 'Payment Secure',
-      description: 'We ensure secure payment',
+        icon: <PaymentSecure />,
+        title: 'Payment Secure',
+        description: 'We ensure secure payment',
     },
-  ];
+];
+
+// Define home1 navbar data
+export const navigationLinks = [
+    {
+        to: '',
+        label: 'home',
+        submenu: [
+            {
+                to: '/',
+                label: 'Home 01',
+                imgSrc: require("../Assets/img/menu/home-1.png")
+            },
+            {
+                to: '/Home2',
+                label: 'Home 02',
+                imgSrc: require("../Assets/img/menu/home-2.png")
+            },
+            {
+                to: '/Home3',
+                label: 'Home 03',
+                imgSrc: require("../Assets/img/menu/home-3.png")
+            },
+        ]
+    },
+    { to: '/service', label: 'Service' },
+    { to: '/About', label: 'About' },
+    { to: '/Contact', label: 'Contact' },
+];
+
+// Define all categories data
+export const yourCategoryArray = [
+    {
+        label: "Handmade",
+        catLogo: <Handmade />,
+        submenu: [
+            { label: "Table" },
+            { label: "Chair" },
+            { label: "Watch" },
+            { label: "Furniture" },
+            { label: "Clock" },
+        ]
+    },
+    { label: "Gifts Sets", catLogo: <GiftsSets /> },
+    { label: "Candles", catLogo: <Candles /> },
+    { label: "Book", catLogo: <Book /> },
+    { label: "Cosmetics", catLogo: <Cosmetics /> },
+    { label: "Handy Cream", catLogo: <HandyCream /> },
+    { label: "Plastic Gifts", catLogo: <PlasticGifts /> },
+    { label: "Silk Accessories", catLogo: <SilkAccessories /> },
+];

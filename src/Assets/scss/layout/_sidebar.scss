@@ -47,7 +47,7 @@
 				width: 100%;
 				padding: 0;
 
-				&.has-dropdown>a .dropdown-toggle-btn.dropdown-opened i {
+				&.has-dropdown>a .dropdown-toggle-btn.dropdown-opened i svg {
 					@include mixins.transform(rotate(90deg));
 				}
 
@@ -121,6 +121,7 @@
 		visibility: visible;
 		opacity: 1;
 		display: none;
+		padding-top: 15px;
 
 		li {
 			float: none;
@@ -165,14 +166,20 @@
 		color: var(--tp-common-black);
 		border: none;
 
-		&:hover i {
+		&:hover i svg {
 			@include mixins.transform(rotate(360deg));
 		}
 
 		i {
-			font-weight: 300;
-			font-size: 20px;
-			@include mixins.transition(0.9s);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			svg {
+				font-weight: 300;
+				font-size: 20px;
+				@include mixins.transition(0.9s);
+			}
 		}
 	}
 
