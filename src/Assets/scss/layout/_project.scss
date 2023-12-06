@@ -1,0 +1,149 @@
+@use "../utils/variables";
+@use "../utils/mixins";
+
+.tp-project-3 {
+	&__wrapper .swiper-wrapper {
+		align-items: center;
+	}
+
+	&__shape-1 {
+		position: absolute;
+		left: -2%;
+		top: -16%;
+		z-index: -1;
+		animation: tptranslateX2 4s infinite alternate;
+
+		@media only screen and (min-width: 1400px) and (max-width: 1599px) {
+			top: -6%;
+		}
+
+		@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+			top: -6%;
+		}
+	}
+
+	&__top-text {
+		color: var(--tp-common-black);
+		font-size: 36px;
+		font-weight: 400;
+		line-height: 50px;
+
+		@media only screen and (min-width: 992px) and (max-width: 1199px) {
+			font-size: 30px;
+
+			& br {
+				display: none;
+			}
+		}
+
+		@media only screen and (min-width: 768px) and (max-width: 991px) {
+			font-size: 28px;
+
+			& br {
+				display: none;
+			}
+		}
+
+		@media (max-width: 767px) {
+			font-size: 21px;
+			line-height: 32px;
+
+			& br {
+				display: none;
+			}
+		}
+
+		& span {
+			font-weight: 600;
+		}
+	}
+
+	&__item {
+		position: relative;
+		text-align: center;
+		overflow: hidden;
+
+		& img {
+			width: 100%;
+			@include mixins.transition(0.7s);
+		}
+
+		&:hover {
+			& img {
+				@include mixins.transform(scale(1.2));
+			}
+
+			& .tp-project-3__text-box {
+				opacity: 1;
+				visibility: visible;
+				@include mixins.transform(translateY(-50%) scale(1));
+			}
+		}
+	}
+
+	&__text-box {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		@include mixins.transform(translateY(-50%) scale(0.5));
+		height: 250px;
+		width: 250px;
+		background: rgba(115, 92, 252, 0.88);
+		@include mixins.border-radius(50%);
+		opacity: 0;
+		@include mixins.transition(0.4s);
+
+		@media only screen and (min-width: 1400px) and (max-width: 1599px) {
+			left: -14px;
+		}
+
+		@media only screen and (min-width: 992px) and (max-width: 1199px) {
+			left: -21px;
+		}
+
+		@media only screen and (min-width: 768px) and (max-width: 991px) {
+			left: -2px;
+			height: 270px;
+			width: 270px;
+		}
+	}
+
+	&__content {
+		padding: 13px 20px;
+		display: inline-block;
+		background: rgba(255, 255, 255, 0.19);
+		position: absolute;
+		top: 50%;
+		@include mixins.transform(translateY(-50%));
+		left: 30px;
+		right: 30px;
+
+		& h6 {
+			font-size: 20px;
+			font-weight: 500;
+			line-height: 1;
+			margin-bottom: 0;
+
+			a {
+				color: var(--tp-common-white);
+			}
+		}
+	}
+
+	&__text {
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		@include mixins.transform(translateX(-50%));
+		background: #5748ff;
+		padding: 5px 22px;
+
+		& span {
+			color: var(--tp-common-white);
+			font-size: 17px;
+			font-weight: 500;
+		}
+	}
+}

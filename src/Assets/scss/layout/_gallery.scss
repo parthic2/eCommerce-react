@@ -1,0 +1,19 @@
+@use "../utils/variables";
+@use "../utils/mixins";
+
+.tp-instagram-2 {
+	&__thumb {
+		overflow: hidden;
+
+		&:hover {
+			& img {
+				@include mixins.transform(scale(1.2));
+			}
+		}
+
+		& img {
+			width: 100%;
+			@include mixins.transition(0.6s);
+		}
+	}
+}

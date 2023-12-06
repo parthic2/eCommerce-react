@@ -1,0 +1,51 @@
+:root {
+	/**
+  @font family declaration
+  */
+	--tp-ff-body: Satoshi;
+	--tp-ff-fontawesome: Font Awesome 6 Pro;
+	/**
+  @color declaration
+  */
+	--tp-common-white: #ffffff;
+	--tp-common-white-2: #f5f3fb;
+	--tp-common-black: #09052f;
+	--tp-common-black-2: #070707;
+	--tp-common-black-3: #000000;
+	--tp-common-black-4: #272f4d;
+	--tp-common-red: #ff3f4a;
+	--tp-common-green: #245757;
+	--tp-common-purple: #7d2eff;
+	--tp-common-purple-2: #735cfc;
+	--tp-common-pink: #f94e41;
+	--tp-common-pink-2: #f8f3ff;
+	--tp-common-pink-3: #faf6fc;
+	--tp-common-pink-4: #f43278;
+	--tp-common-blue: #2f57ef;
+	--tp-heading-primary: #09052f;
+	--tp-grey-1: #eeeef5;
+	--tp-grey-2: #f5f7fa;
+	--tp-grey-3: #5b646b;
+	--tp-grey-4: #787981;
+	--tp-text-body: #72747c;
+	--tp-theme-1: linear-gradient(
+		90.07deg,
+		#ff4e8d 32.43%,
+		#ae34e8 58.79%,
+		#3e8dff 105.32%
+	);
+	--tp-theme-2: #6b14fa;
+	--tp-theme-3: #951df6;
+	--tp-theme-4: linear-gradient(218.15deg, #b966e7 0%, #2f57ef 100%);
+	--tp-common-bg: #fa4d8b;
+	--tp-shadow-1: 0px 6px 34px rgba(215, 216, 222, 0.41);
+	--tp-shadow-2: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	--tp-border: #eff1f5;
+	--tp-border-1: #EFF1F5;
+	--tp-border-2: #cacaca;
+	--tp-border-3: 1px solid rgba(255, 255, 255, 0.12);
+	--tp-common-background: #192335;
+	--tp-background: rgba(39, 0, 255, 0.5);
+	--tp-dot: #d9d9d9;
+	--tp-common-orange: #ff8717;
+}

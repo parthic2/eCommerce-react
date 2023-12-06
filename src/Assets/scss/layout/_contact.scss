@@ -1,0 +1,181 @@
+@use "../utils/variables";
+@use "../utils/mixins";
+
+.ec-contact {
+    &-container {
+        padding: 30px;
+        background-color: #fff;
+        border: 1px solid #ededed;
+        text-align: left;
+        @include mixins.border-radius(5px);
+        box-shadow: var(--tp-shadow-2);
+
+        .ec-contact-form {
+            form {
+                display: flex;
+                flex-flow: row wrap;
+                margin: 0 -15px;
+            }
+
+            label {
+                margin-bottom: 9px;
+                color: #444444;
+                font-size: 16px;
+                font-weight: 500;
+                letter-spacing: 0;
+                line-height: 1;
+            }
+
+            input {
+                background-color: transparent;
+                border: 1px solid #ededed;
+                color: #444444;
+                font-size: 15px;
+                margin-bottom: 27px;
+                padding: 0 15px;
+                width: 100%;
+                outline: none;
+                line-height: 50px;
+                height: 50px;
+                @include mixins.border-radius(10px);
+
+                &::placeholder {
+                    color: #777;
+                }
+            }
+
+            textarea {
+                background-color: transparent;
+                border: 1px solid #ededed;
+                color: #444444;
+                font-size: 15px;
+                margin-bottom: 27px;
+                padding: 0 15px;
+                width: 100%;
+                outline: none;
+                padding-top: 14px;
+                min-height: 150px;
+
+                &::placeholder {
+                    color: #777;
+                }
+            }
+
+            .btn {
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: 500;
+                @include mixins.border-radius(0);
+                @include mixins.transition(0.3s);
+                padding: 13px 29px;
+                color: #fff;
+                letter-spacing: 0.05em;
+                border: 2px solid var(--tp-common-purple);
+                background-image: linear-gradient(30deg, var(--tp-common-purple) 50%, transparent 50%);
+                background-size: 850px;
+                background-repeat: no-repeat;
+                background-position: 0;
+
+                &:hover {
+                    @include mixins.transition(0.3s);
+                    background-position: 100%;
+                    color: var(--tp-common-purple);
+                    background-color: #fff;
+                    border: 2px solid var(--tp-common-purple);
+                }
+            }
+
+            .ec-contact-wrap {
+                width: 100%;
+                padding: 0 15px;
+
+                .ec-contact-half {
+                    width: 50%;
+                }
+            }
+        }
+    }
+
+    &-item {
+        display: flex;
+        margin: 0;
+        line-height: 26px;
+        border: 0;
+        padding: 0;
+        font-weight: 400;
+        font-size: 14px;
+        color: #777777;
+        margin-bottom: 10px;
+
+        @media (max-width:991px) {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding-bottom: 20px;
+            margin-bottom: 0;
+        }
+
+        a {
+            color: #777777;
+        }
+
+        i {
+            min-width: 20px;
+            font-size: 20px;
+            color: #3474d4;
+            margin-right: 11px;
+        }
+
+        span {
+            font-size: 15px;
+            color: #444444;
+            font-weight: 500;
+            min-width: 74px;
+
+            @media (max-width:991px) {
+                padding-top: 10px;
+            }
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+
+            @media (max-width:991px) {
+                padding-bottom: 0;
+            }
+        }
+    }
+
+}
+
+.ec_contact_info {
+    margin-bottom: 30px;
+    background-color: #fff;
+    box-shadow: var(--tp-shadow-2);
+    padding: 30px;
+    height: 28%;
+    @include mixins.border-radius(5px);
+    border: 1px solid #ededed;
+
+    @media (max-width:991px) {
+        margin-top: 30px;
+        height: auto;
+    }
+
+    .ec_contact_info_head {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 19px;
+        color: #202b3a;
+        letter-spacing: 0.6px;
+        position: relative;
+    }
+}
+
+.ec_map_canvas iframe {
+    overflow: hidden;
+    background: none !important;
+    height: 505px;
+    width: 100%;
+    @include mixins.border-radius(5px);
+}

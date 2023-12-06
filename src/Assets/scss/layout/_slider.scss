@@ -1,0 +1,44 @@
+.tp-slider-text-3 {
+    &__ptb {
+        padding: 100px 0;
+
+        @media (max-width: 767px) {
+            padding: 50px 0;
+        }
+    }
+
+    &__item {
+        padding: 20px 0;
+        animation: scrollText-2 20s infinite linear;
+
+        span {
+            font-weight: 400;
+            font-size: 120px;
+            color: #E7E7E7;
+            line-height: 1;
+            white-space: nowrap;
+
+            @media only screen and (min-width: 1400px) and (max-width: 1599px) {
+                font-size: 90px;
+            }
+
+            @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+                font-size: 80px;
+            }
+
+            @media (max-width: 767px) {
+                font-size: 55px;
+            }
+
+            i {
+                background: linear-gradient(180deg, #FE4386 0%, #B63AD8 51.04%, #A838E8 60.94%, rgba(254, 57, 42, 0) 100%, #5779F9 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+                font-style: normal;
+                font-weight: 400;
+            }
+        }
+    }
+}

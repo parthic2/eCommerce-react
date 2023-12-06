@@ -1,0 +1,252 @@
+@use '../utils/mixins';
+
+.animated {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+.animated.hinge {
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+}
+
+@include mixins.keyframes(moving) {
+	0% {
+		@include mixins.transform(translateY(0px));
+	}
+
+	20% {
+		@include mixins.transform(translateX(-50px));
+	}
+
+	50% {
+		@include mixins.transform(translateY(-20px));
+	}
+
+	100% {
+		@include mixins.transform(translateY(0px));
+	}
+}
+
+@include mixins.keyframes(tptranslateX2) {
+	0% {
+		@include mixins.transform(translateX(-30px));
+	}
+
+	100% {
+		@include mixins.transform(translateX(20px));
+	}
+}
+
+@include mixins.keyframes(tptranslateY2) {
+	0% {
+		@include mixins.transform(translateY(-30px));
+	}
+
+	100% {
+		@include mixins.transform(translateY(20px));
+	}
+}
+
+@include mixins.keyframes(zoom) {
+	0% {
+		@include mixins.transform(scale(0.5));
+	}
+
+	50% {
+		@include mixins.transform(scale(1));
+	}
+
+	100% {
+		@include mixins.transform(scale(0.5));
+	}
+}
+
+@include mixins.keyframes(fadeInDown) {
+	0% {
+		@include mixins.transform(translateY(-50px));
+	}
+
+	100% {
+		@include mixins.transform(translateY(0));
+	}
+}
+
+.fadeInDown {
+	-webkit-animation-name: fadeInDown;
+	animation-name: fadeInDown;
+}
+
+@include mixins.keyframes(section-animation) {
+	0% {
+		width: 0;
+	}
+
+	15% {
+		width: 100%;
+	}
+
+	85% {
+		opacity: 1;
+	}
+
+	90% {
+		width: 100%;
+		opacity: 0;
+	}
+
+	to {
+		width: 0;
+		opacity: 0;
+	}
+}
+
+@include mixins.keyframes(icon-bounce) {
+
+	0%,
+	100%,
+	20%,
+	50%,
+	80% {
+		@include mixins.transform(translateY(0));
+	}
+
+	40% {
+		@include mixins.transform(translateY(-10px));
+	}
+
+	60% {
+		@include mixins.transform(translateY(-5px));
+	}
+}
+
+@include mixins.keyframes(scroll) {
+	0% {
+		@include mixins.transform(translateX(0));
+	}
+
+	to {
+		@include mixins.transform(translateX(-1750px));
+	}
+}
+
+@include mixins.keyframes(scrollProcess) {
+	0% {
+		@include mixins.transform(translateY(0));
+	}
+
+	100% {
+		@include mixins.transform(translateY(8px));
+	}
+}
+
+@include mixins.keyframes(scrollLeft) {
+	0% {
+		@include mixins.transform(translateX(-1750px));
+	}
+
+	to {
+		@include mixins.transform(translateX(0));
+	}
+}
+
+@include mixins.keyframes(borderanimate2) {
+	0% {
+		@include mixins.transform(translate(-50%, -50%) scale(0.8));
+	}
+
+	60% {
+		opacity: 1;
+	}
+
+	100% {
+		@include mixins.transform(translate(-50%, -50%) scale(2.5));
+		opacity: 0;
+	}
+}
+
+@include mixins.keyframes(tpupdown) {
+	0% {
+		@include mixins.transform(translateY(0));
+	}
+
+	100% {
+		@include mixins.transform(translateY(-20px));
+	}
+}
+
+@include mixins.keyframes(tpswing) {
+	0% {
+		@include mixins.transform(rotate(25deg));
+	}
+
+	100% {
+		@include mixins.transform(rotate(0deg));
+	}
+}
+
+@include mixins.keyframes(sliderShape) {
+
+	0%,
+	100% {
+		@include mixins.border-radius(42% 58% 70% 30% / 45% 45% 55% 55%);
+		@include mixins.transform(translate3d(0, 0, 0) rotateZ(0.01deg));
+	}
+
+	34% {
+		@include mixins.border-radius(70% 30% 46% 54% / 30% 29% 71% 70%);
+		@include mixins.transform(translate3d(0, 5px, 0) rotateZ(0.01deg));
+	}
+
+	50% {
+		@include mixins.transform(translate3d(0, 0, 0) rotateZ(0.01deg));
+	}
+
+	67% {
+		@include mixins.border-radius(100% 60% 60% 100% / 100% 100% 60% 60%);
+		@include mixins.transform(translate3d(0, -3px, 0) rotateZ(0.01deg));
+	}
+}
+
+@include mixins.keyframes(scrollText-2) {
+	from {
+		@include mixins.transform(translateX(-50%));
+	}
+
+	to {
+		@include mixins.transform(translateX(0%));
+	}
+}
+
+// 
+@keyframes slideIn {
+	from {
+		@include mixins.transform(translateX(-100%));
+	}
+
+	to {
+		@include mixins.transform(translateX(0));
+	}
+}
+
+@keyframes zoomIn {
+	from {
+		@include mixins.transform(scale(0));
+	}
+
+	to {
+		@include mixins.transform(scale(1));
+	}
+}
+
+.slide-in {
+	animation: slideIn 0.5s ease-in-out;
+	display: block;
+}
+
+.zoom-in {
+	animation: zoomIn 0.6s ease-in-out;
+	display: block;
+}

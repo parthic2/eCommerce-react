@@ -1,0 +1,225 @@
+@use "../utils/variables";
+@use "../utils/mixins";
+
+.tp-business {
+	&__bg {
+		background: linear-gradient(180deg,
+				#fcf5fc 0.01%,
+				rgba(246, 245, 250, 0) 100%);
+		@include mixins.border-radius(40px);
+		margin: 0 60px;
+		padding-top: 95px;
+
+		@media only screen and (min-width: 992px) and (max-width: 1199px) {
+			margin: 0 20px;
+		}
+
+		@media only screen and (min-width: 768px) and (max-width: 991px),
+		(max-width: 767px) {
+			margin: 0px;
+		}
+	}
+
+	&__item {
+		span {
+			height: 105px;
+			width: 105px;
+			line-height: 105px;
+			@include mixins.border-radius(50%);
+			display: inline-block;
+			align-items: center;
+			text-align: center;
+			margin-bottom: 20px;
+			@include mixins.transition(0.3s);
+			color: var(--tp-common-purple-2);
+			background-color: var(--tp-common-white);
+			box-shadow: var(--tp-shadow-2);
+		}
+
+		&:hover svg {
+			animation: icon-bounce 0.8s 1;
+		}
+	}
+
+	&__title {
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 30px;
+		text-transform: capitalize;
+
+		@media only screen and (min-width: 992px) and (max-width: 1199px) {
+			font-size: 15px;
+		}
+
+		@media only screen and (min-width: 768px) and (max-width: 991px) {
+			font-size: 16px;
+		}
+
+		@media (max-width: 767px) {
+			font-size: 13px;
+		}
+	}
+
+	&__item-box {
+		.tp-business:nth-child(1) {
+			padding-top: 40px;
+		}
+
+		.tp-business:nth-child(3) {
+			padding-top: 40px;
+		}
+
+		.tp-business:nth-child(5) {
+			padding-top: 40px;
+		}
+	}
+
+	&__left-thumb {
+		position: relative;
+
+		@media only screen and (min-width: 768px) and (max-width: 991px),
+		(max-width: 767px) {
+			margin-bottom: 70px;
+		}
+
+		img {
+			max-width: 100%;
+		}
+	}
+
+	&__shape-1 {
+		position: absolute;
+		bottom: -16px;
+		right: 58px;
+	}
+
+	&__shape-2 {
+		position: absolute;
+		bottom: 32%;
+		left: -14%;
+		animation: moving 9s linear infinite;
+	}
+
+	&__shape-3 {
+		position: absolute;
+		bottom: 50.3%;
+		left: -20%;
+	}
+
+	&__shape-4 {
+		position: absolute;
+		top: 15%;
+		left: 6%;
+		animation: zoom 7s infinite;
+
+		@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+			top: 12%;
+			left: -2%;
+		}
+	}
+
+	&__content-title {
+		font-size: 20px;
+	}
+
+	&__content-box {
+		margin-left: 10px;
+
+		ul {
+			padding-left: 0 !important;
+		}
+
+		.tp-business__content-shape {
+			position: absolute;
+			left: 5%;
+			top: 4%;
+
+			@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+				left: 6%;
+			}
+		}
+
+		ul li:not(:last-child) {
+			padding-bottom: 50px;
+
+			@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+				padding-bottom: 20px;
+			}
+		}
+	}
+
+	&__content {
+		position: relative;
+		z-index: 11;
+	}
+
+	&__number span {
+		font-weight: 500;
+		font-size: 20px;
+		color: var(--tp-common-white);
+		display: inline-block;
+		height: 59px;
+		width: 59px;
+		@include mixins.border-radius(50%);
+		line-height: 59px;
+		text-align: center;
+		box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.04);
+		margin-right: 42px;
+		position: relative;
+		transition: transform 300ms ease;
+		background: linear-gradient(166.19deg,
+				#f15c92 5.02%,
+				#9364d6 56.44%,
+				#6790f5 90.14%);
+
+		.tp-business__content-title {
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 30px;
+			text-transform: capitalize;
+			padding-bottom: 5px;
+			margin-bottom: 0 !important;
+
+			@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+				font-size: 20px;
+			}
+
+			@media only screen and (min-width: 992px) and (max-width: 1199px) {
+				font-size: 17px;
+			}
+
+			@media only screen and (min-width: 768px) and (max-width: 991px) {
+				font-size: 20px;
+			}
+
+			@media (max-width: 767px) {
+				font-size: 17px;
+			}
+
+			p {
+				padding-right: 40px;
+				margin-bottom: 0 !important;
+
+				@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+					font-size: 15px;
+					padding-right: 40px;
+				}
+
+				@media only screen and (min-width: 992px) and (max-width: 1199px) {
+					font-size: 14px;
+					padding-right: 40px;
+				}
+
+				@media only screen and (min-width: 768px) and (max-width: 991px) {
+					font-size: 14px;
+					padding-right: 172px;
+				}
+
+				@media (max-width: 767px) {
+					font-size: 14px;
+					padding-right: 0;
+				}
+			}
+		}
+	}
+}

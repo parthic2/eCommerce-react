@@ -1,0 +1,19 @@
+// font url
+
+@font-face {
+	font-family: "Satoshi";
+	src: url("../fonts/Satoshi-Medium.otf") format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+// font family
+$font-family: (
+	"ff": (
+		"body": "Satoshi",
+		"heading": "'Outfit', sans-serif",
+		"satoshi": "Satoshi",
+		"fontawesome": "Font Awesome 6 Pro",
+	),
+);

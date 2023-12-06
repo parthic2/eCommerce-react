@@ -1,0 +1,86 @@
+@use "../utils/variables";
+@use "../utils/mixins";
+
+.tp-custom-accordion {
+	& .accordion-buttons.collapsed {
+		border: 1px solid #e3ebf4;
+	}
+
+	& .collapsed {
+		position: relative;
+		z-index: 99;
+	}
+
+	& .accordion-buttons {
+		position: relative;
+		width: 100%;
+		padding: 22px 25px;
+		background-color: var(--tp-common-white);
+		text-align: left;
+		font-weight: 700;
+		font-size: 18px;
+		margin-bottom: 25px;
+		border: 1px solid transparent;
+		@include mixins.transition(0.3s);
+		@include mixins.border-radius(4px);
+		line-height: 1.2;
+		color: var(--tp-common-black);
+
+		@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+			font-size: 17px;
+		}
+
+		&::after {
+			position: absolute;
+			content: "\f068";
+			font-family: "Font Awesome 5 Pro";
+			top: 50%;
+			@include mixins.transform(translateY(-50%));
+			right: 30px;
+			font-size: 16px;
+			opacity: 1;
+
+			@media (max-width: 767px) {
+				top: 35px px;
+				right: 25px;
+				font-size: 13px;
+			}
+		}
+
+		&:not(.collapsed) {
+			background: rgba(255, 255, 255, 0.5);
+			box-shadow: 0px 11px 12px 0px rgba(0, 0, 0, 0.08);
+		}
+
+		&.collapsed::after {
+			content: "\f067";
+		}
+	}
+
+	& .accordion-body {
+		background-color: var(--tp-common-white);
+		padding-bottom: 20px;
+		padding-left: 25px;
+		padding-right: 50px;
+		position: relative;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 28px;
+		z-index: 1;
+		color: var(--tp-text-body);
+
+		@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+			font-size: 14px;
+			padding-right: 65px;
+		}
+
+		&::after {
+			position: absolute;
+			content: "";
+			top: 6px;
+			left: 70px;
+			width: 1px;
+			height: 75px;
+		}
+	}
+}
