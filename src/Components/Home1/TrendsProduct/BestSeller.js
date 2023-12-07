@@ -1,13 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { StarBlack, StarWhite, TopDownBlack, TopDownWhite, ViewBlack, ViewWhite } from '../../../svg/svg';
+import { Star, TopDown, View } from '../../../svg/svg';
 import { cardTabData } from '../../../Data/Data';
 import { FaStar } from 'react-icons/fa6';
-import { useHover } from '../../../Hooks/useHover';
 
 const BestSeller = () => {
-  const { isViewHovered, isStarHovered, isTopDownHovered, handleViewMouseEnter, handleViewMouseLeave, handleStarMouseEnter, handleStarMouseLeave, handleTopDownMouseEnter, handleTopDownMouseLeave } = useHover();
-
   return (
     <div className="tp-trend-product-5__wrapper">
       <div className="row">
@@ -18,38 +15,14 @@ const BestSeller = () => {
                 <div className="tp-trend-product-5__thumb fix p-relative">
                   <img src={product.imgSrc} alt="trend" className="img-fluid" width="259" height="172" />
                   <div className="tp-trend-product-5__icon-box">
-                    <Link
-                      to="/"
-                      onMouseEnter={handleViewMouseEnter}
-                      onMouseLeave={handleViewMouseLeave}
-                    >
-                      {isViewHovered ? (
-                        <ViewWhite />
-                      ) : (
-                        <ViewBlack />
-                      )}
+                    <Link to="/">
+                      <View />
                     </Link>
-                    <Link
-                      to="/"
-                      onMouseEnter={handleStarMouseEnter}
-                      onMouseLeave={handleStarMouseLeave}
-                    >
-                      {isStarHovered ? (
-                        <StarWhite />
-                      ) : (
-                        <StarBlack />
-                      )}
+                    <Link to="/">
+                      <Star />
                     </Link>
-                    <Link
-                      to="/"
-                      onMouseEnter={handleTopDownMouseEnter}
-                      onMouseLeave={handleTopDownMouseLeave}
-                    >
-                      {isTopDownHovered ? (
-                        <TopDownWhite />
-                      ) : (
-                        <TopDownBlack />
-                      )}
+                    <Link to="/">
+                      <TopDown />
                     </Link>
                   </div>
                   <div className="tp-trend-product-5__thumb-text">

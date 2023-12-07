@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const useScrollNavbar1 = () => {
+export const useScrollNavbar1 = () => {
     const [, setScroll] = useState(window.scrollY);
     const [isHeaderSticky, setIsHeaderSticky] = useState(false);
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -69,4 +69,45 @@ const useScrollNavbar1 = () => {
     return { isHeaderSticky, isSidebarOpen, handleSidebarOpen, handleSidebarClose };
 }
 
-export default useScrollNavbar1;
+export const useScrollNavbar2 = () => {
+    const [, setScroll] = useState(window.scrollY);
+    const [isHeaderSticky, setIsHeaderSticky] = useState(false);
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const newScroll = window.scrollY;
+            setScroll(newScroll);
+
+            const headerSticky = document.getElementById('header-sticky');
+
+            if (newScroll < 100) {
+                // Remove the "header-sticky" class
+                setIsHeaderSticky(false);
+                // Remove
+                headerSticky.style.display = 'block';
+            } else {
+                // Add the "header-sticky" class
+                setIsHeaderSticky(true);
+                // Add
+                headerSticky.style.display = "block";
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    const handleSidebarOpen = () => {
+        setIsSidebarOpen(true);
+    };
+
+    const handleSidebarClose = () => {
+        setIsSidebarOpen(false);
+    };
+
+    return { isHeaderSticky, isSidebarOpen, handleSidebarOpen, handleSidebarClose };
+};

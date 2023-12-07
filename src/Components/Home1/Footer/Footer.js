@@ -8,6 +8,22 @@ import CopyRight from './CopyRight';
 import { featureItems } from '../../../Data/Data';
 import { EmailLogo } from '../../../svg/svg';
 
+const FooterFeatureItem = ({ icon, title, description }, index) => (
+  <div className={`col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-30`} key={index}>
+    <div className={`tp-footer-4-top__item item-border-${index + 1}`}>
+      <div className="tp-feature-3__item d-flex align-items-center">
+        <div className="tp-feature-3__icon">
+          <span>{icon}</span>
+        </div>
+        <div className="tp-feature-3__text">
+          <h1>{title}</h1>
+          <span>{description}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+);
+
 const Footer = () => {
   return (
     <footer className="bg-shadow">
@@ -16,24 +32,7 @@ const Footer = () => {
           <div className="tp-footer-4-top__border">
             <div className="row">
               {featureItems.map((item, index) => (
-                <div
-                  key={index}
-                  className={`col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-30 wow tpfadeUp`}
-                  data-wow-duration=".9s"
-                  data-wow-delay={`.${3 + 2 * index}s`}
-                >
-                  <div className={`tp-footer-4-top__item item-border-${index + 1}`}>
-                    <div className="tp-feature-3__item d-flex align-items-center">
-                      <div className="tp-feature-3__icon">
-                        <span>{item.icon}</span>
-                      </div>
-                      <div className="tp-feature-3__text">
-                        <h1>{item.title}</h1>
-                        <span>{item.description}</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <FooterFeatureItem {...item} index={index} key={index} />
               ))}
             </div>
           </div>
@@ -43,16 +42,12 @@ const Footer = () => {
       <div className="tp-footer-4__area pt-65 mb-55">
         <div className="container custom-container-3">
           <div className="row">
-            <div
-              className="col-xl-3 col-lg-4 col-md-6 mb-30 wow tpfadeUp"
-              data-wow-duration=".9s"
-              data-wow-delay=".3s"
-            >
+            <div className="col-xl-3 col-lg-4 col-md-6 mb-30">
               <div className="tp-footer-4__widget footer-col-9">
                 <div className="tp-footer-4__logo">
-                  <a href="index2.html" aria-label="E-Solution">
+                  <Link to="/" aria-label="E-Solution">
                     eSolution
-                  </a>
+                  </Link>
                 </div>
                 <div className="tp-footer-4__text">
                   <p>

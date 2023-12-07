@@ -5371,6 +5371,10 @@ only screen and (min-width: 768px) and (max-width: 991px),
   margin-right: 8px;
 }
 
+.tp-category-menu-btn span svg {
+  font-size: 23px;
+}
+
 .tp-category-menu-btn::after {
   position: absolute;
   content: "\f107";
@@ -9540,7 +9544,12 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 
 .tp-product-2__star i {
   color: #fab311;
-  padding-right: 2px;
+  padding-right: 7px;
+}
+
+.tp-product-2__star i svg {
+  width: 18px;
+  height: 16px;
 }
 
 .tp-product-2__star i.color {
@@ -10171,7 +10180,8 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
   display: flex;
   justify-content: center;
   align-items: center;
-  fill: white;
+  color: white;
+  font-size: 20px;
   box-shadow: var(--tp-shadow-2);
 }
 

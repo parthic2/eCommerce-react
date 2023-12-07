@@ -3,15 +3,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation } from 'swiper/modules';
 import 'swiper/css'; // core Swiper
 import { Link } from 'react-router-dom';
+import { FaCaretLeft, FaCaretRight } from "react-icons/fa";
 import shape from "../../Assets/img/catagori/shape-2-1.png";
-import cat1 from "../../Assets/img/catagori/cat-1.png";
-import cat2 from "../../Assets/img/catagori/cat-2.png";
-import cat3 from "../../Assets/img/catagori/cat-3.svg";
-import cat4 from "../../Assets/img/catagori/cat-4.png";
-import cat5 from "../../Assets/img/catagori/cat-5.png";
-import cat6 from "../../Assets/img/catagori/cat-6.png";
-import cat7 from "../../Assets/img/catagori/cat-7.png";
 import line from "../../Assets/img/svg/InnerLine.svg";
+import { catItems } from '../../Data/Data';
 
 const Categories = () => {
   return (
@@ -41,21 +36,11 @@ const Categories = () => {
                   </span>
                 </span>
               </h1>
-              <div
-                className="d-flex justify-content-end align-items-end gap-3 pt-10"
-              >
+              <div className="d-flex justify-content-end align-items-end gap-3 pt-10">
                 <div className="tp-feature__arrow-box-prev d-xxl-block">
                   <div className="swiper-button-prev">
                     <button aria-label="Prev Button">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        height="1em"
-                        viewBox="0 0 256 512"
-                      >
-                        <path
-                          d="M9.4 278.6c-12.5-12.5-12.5-32.8 0-45.3l128-128c9.2-9.2 22.9-11.9 34.9-6.9s19.8 16.6 19.8 29.6l0 256c0 12.9-7.8 24.6-19.8 29.6s-25.7 2.2-34.9-6.9l-128-128z"
-                        />
-                      </svg>
+                      <FaCaretLeft />
                     </button>
                   </div>
                 </div>
@@ -63,15 +48,7 @@ const Categories = () => {
                 <div className="tp-feature__arrow-box d-xxl-block">
                   <div className="swiper-button-next">
                     <button aria-label="Next Button">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        height="1em"
-                        viewBox="0 0 256 512"
-                      >
-                        <path
-                          d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z"
-                        />
-                      </svg>
+                      <FaCaretRight />
                     </button>
                   </div>
                 </div>
@@ -116,90 +93,20 @@ const Categories = () => {
             }}
             modules={[Autoplay, Navigation]}
           >
-            <SwiperSlide>
-              <div className="tp-catagori-2__item text-center">
-                <div className="tp-catagori-2__icon">
-                  <span>
-                    <img src={cat1} alt="categories-1" className="img-fluid" />
-                  </span>
+            {catItems.map((categories, index) => (
+              <SwiperSlide key={index}>
+                <div className="tp-catagori-2__item text-center">
+                  <div className="tp-catagori-2__icon">
+                    <span>
+                      <img src={categories.image} alt={categories.title} className="img-fluid" />
+                    </span>
+                  </div>
+                  <h2 className="tp-catagori-2__title-2">
+                    <Link to="/Home2">{categories.title}</Link>
+                  </h2>
                 </div>
-                <h2 className="tp-catagori-2__title-2">
-                  <Link to="/Home2">Women Ethnic</Link>
-                </h2>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="tp-catagori-2__item text-center">
-                <div className="tp-catagori-2__icon">
-                  <span>
-                    <img src={cat2} alt="categories-2" className="img-fluid" />
-                  </span>
-                </div>
-                <h2 className="tp-catagori-2__title-2">
-                  <Link to="/Home2">Clothing & Bags</Link>
-                </h2>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="tp-catagori-2__item text-center">
-                <div className="tp-catagori-2__icon">
-                  <span>
-                    <img src={cat3} alt="categories-3" className="img-fluid" />
-                  </span>
-                </div>
-                <h2 className="tp-catagori-2__title-2">
-                  <Link to="/Home2">Men's Wear</Link>
-                </h2>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="tp-catagori-2__item text-center">
-                <div className="tp-catagori-2__icon">
-                  <span>
-                    <img src={cat4} alt="categories-4" className="img-fluid" />
-                  </span>
-                </div>
-                <h2 className="tp-catagori-2__title-2">
-                  <Link to="/Home2">Kids wear</Link>
-                </h2>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="tp-catagori-2__item text-center">
-                <div className="tp-catagori-2__icon">
-                  <span>
-                    <img src={cat5} alt="categories-5" className="img-fluid" />
-                  </span>
-                </div>
-                <h2 className="tp-catagori-2__title-2">
-                  <Link to="/Home2">Women Western</Link>
-                </h2>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="tp-catagori-2__item text-center">
-                <div className="tp-catagori-2__icon">
-                  <span>
-                    <img src={cat6} alt="categories-6" className="img-fluid" />
-                  </span>
-                </div>
-                <h2 className="tp-catagori-2__title-2">
-                  <Link to="/Home2">Accessories</Link>
-                </h2>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="tp-catagori-2__item text-center">
-                <div className="tp-catagori-2__icon">
-                  <span>
-                    <img src={cat7} alt="categories-7" className="img-fluid" />
-                  </span>
-                </div>
-                <h2 className="tp-catagori-2__title-2">
-                  <Link to="/Home2">Beauty & Health</Link>
-                </h2>
-              </div>
-            </SwiperSlide>
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
       </div>

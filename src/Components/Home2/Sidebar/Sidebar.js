@@ -1,15 +1,10 @@
 import React, { useState } from 'react';
-import { FaAngleRight, FaBars, FaLocationDot, FaEnvelope, FaPhoneFlip, FaPaperPlane, FaFacebookF, FaTwitter, FaInstagram, FaPinterestP } from 'react-icons/fa6';
+import { FaAngleRight, FaLocationDot, FaEnvelope, FaPhoneFlip, FaPaperPlane, FaFacebookF, FaTwitter, FaInstagram, FaPinterestP } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
-import { navigationLinks, yourCategoryArray } from '../../../Data/Data';
+import { navigationLinks } from '../../../Data/Data';
 
 const Sidebar = () => {
   const [isSubMenuVisible, setIsSubMenuVisible] = useState(false);
-  const [isNavOpen, setNavOpen] = useState(false);
-
-  const toggleNav = () => {
-    setNavOpen(!isNavOpen);
-  };
 
   return (
     <>
@@ -23,55 +18,6 @@ const Sidebar = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
           incidunt eaque a cumque, porro maxime autem sed.
         </p>
-      </div>
-      <div className="offcanvas__category d-xl-none pb-40">
-        <button
-          className="tp-offcanvas-category-toggle"
-          aria-label="categories"
-          onClick={toggleNav}
-        >
-          <i><FaBars /></i>
-          All Categories
-        </button>
-        {isNavOpen && (
-          <div className="tp-category-mobile-menu">
-            <nav className="tp-category-menu-content">
-              <ul>
-                {yourCategoryArray.map((category, index) => (
-                  <li key={index} className={category.submenu ? 'has-dropdown dropdown-opened' : ''}>
-                    <Link
-                      to="/"
-                      className={`expanded ${isSubMenuVisible ? 'dropdown-opened' : ''}`}
-                    >
-                      {category.catLogo}
-                      {category.label}
-                      {category.submenu && (
-                        <button
-                          className={`dropdown-toggle-btn ${isSubMenuVisible ? 'dropdown-opened' : ''}`}
-                          onClick={() => setIsSubMenuVisible(!isSubMenuVisible)}
-                        >
-                          <i><FaAngleRight /></i>
-                        </button>
-                      )}
-                    </Link>
-                    {category.submenu && (
-                      <ul
-                        className='tp-submenu'
-                        style={{ display: isSubMenuVisible ? 'block' : 'none' }}
-                      >
-                        {category.submenu.map((subCatItem, index) => (
-                          <li key={index}>
-                            <Link>{subCatItem.label}</Link>
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-                  </li>
-                ))}
-              </ul>
-            </nav>
-          </div>
-        )}
       </div>
       <div className="tp-main-menu-mobile d-xl-none">
         <nav className="tp-main-menu-content">

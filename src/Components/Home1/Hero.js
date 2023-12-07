@@ -7,6 +7,7 @@ import hero4 from '../../Assets/img/hero/hero-4.svg';
 import heroShape41 from '../../Assets/img/hero/hero-shape-4-1.png';
 import heroShape42 from '../../Assets/img/hero/hero-shape-4-2.png';
 import heroShape43 from '../../Assets/img/hero/hero-shape-4-3.png';
+import { ShopNow } from '../../svg/svg';
 
 const Hero = () => {
   return (
@@ -52,9 +53,7 @@ const Hero = () => {
                     <span>$ 180.99  / <del> $2860</del></span>
                     <p>Sumptuous, filling, and temptingly healthy.</p>
                     <Link className="tp-btn-white purple-bg-color" to="/">
-                      <i>
-                        <img src={require("../../Assets/img/svg/shop.svg").default} alt="shop" />
-                      </i>
+                      <i><ShopNow /></i>
                       Shop Now
                     </Link>
                   </div>

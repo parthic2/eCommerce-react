@@ -1,4 +1,10 @@
-import { FreeShipping, Handmade, MoneyBack, PaymentSecure, Support, GiftsSets, Candles, Book, Cosmetics, HandyCream, PlasticGifts, SilkAccessories } from "../svg/svg";
+import { FreeShipping, Handmade, MoneyBack, PaymentSecure, Support, GiftsSets, Candles, Book, Cosmetics, HandyCream, PlasticGifts, SilkAccessories, Service1, Service2, Service3, Service4, Service5, Service6, Service7, Service8, Service9, Service10, Service11, Service12, Delivery, Product, ListStyle, BrandProduct, CareForYou, FastDelivery, Membership } from "../svg/svg";
+import shipping from "../Assets/img/svg/shipping.svg";
+import payment from "../Assets/img/svg/payment.svg";
+import support from "../Assets/img/svg/support.svg";
+import moneyBack from "../Assets/img/svg/moneyBack.svg";
+import quality from "../Assets/img/svg/quality.svg";
+import Mens from "../Assets/img/catagori/cat-3.svg";
 
 // Trends Product data
 export const tabData = [
@@ -286,4 +292,339 @@ export const yourCategoryArray = [
     { label: "Handy Cream", catLogo: <HandyCream /> },
     { label: "Plastic Gifts", catLogo: <PlasticGifts /> },
     { label: "Silk Accessories", catLogo: <SilkAccessories /> },
+];
+
+// Service page data
+export const servicesData = [
+    {
+        icon: <Service1 />,
+        title: "Women Western",
+        description: "Lorem ipsum",
+    },
+    {
+        icon: <Service2 />,
+        title: "Home & Kitchen",
+        description: "Lorem ipsum",
+    },
+    {
+        icon: <Service3 />,
+        title: "Beauty & Health",
+        description: "Lorem ipsum",
+    },
+    {
+        icon: <Service4 />,
+        title: "Accessories",
+        description: "Lorem ipsum",
+    },
+    {
+        icon: <Service5 />,
+        title: "Mug & Book cover",
+        description: "Lorem ipsum",
+    },
+    {
+        icon: <Service6 />,
+        title: "Electronic",
+        description: "Lorem ipsum",
+    },
+    {
+        icon: <Service7 />,
+        title: "Clothing & bags",
+        description: "Lorem ipsum",
+    },
+    {
+        icon: <Service8 />,
+        title: "Home & Gift",
+        description: "Lorem ipsum",
+    },
+    {
+        icon: <Service9 />,
+        title: "Footwear",
+        description: "Lorem ipsum",
+    },
+    {
+        icon: <Service10 />,
+        title: "Skin Care",
+        description: "Lorem ipsum",
+    },
+    {
+        icon: <Service11 />,
+        title: "Stationary & Other",
+        description: "Lorem ipsum",
+    },
+    {
+        icon: <Service12 />,
+        title: "Winter Wearing",
+        description: "Lorem ipsum",
+    }
+];
+
+// About page FAQ data
+export const faqDataFirst = [
+    {
+        id: 'headingOne',
+        colId: "collapseOne",
+        question: 'What is the multi vendor services?',
+        answer:
+            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. A doloremque odio aliquam quam excepturi hic! Eius possimus aliquid, nemo tempora quia sed unde, odit beatae rem deleniti nisi magnam alias?',
+    },
+    {
+        id: 'headingTwo',
+        colId: "collapseTwo",
+        question: 'How to buy many products at a time?',
+        answer:
+            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias aut nam id nostrum nemo modi. Ipsam quo aliquam, quis perspiciatis harum vel doloremque, distinctio repellat modi incidunt sed, necessitatibus quos.',
+    },
+    {
+        id: 'headingThree',
+        colId: "collapseThree",
+        question: 'Refund policy for customer',
+        answer:
+            'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, illum consectetur provident perferendis distinctio iure ea earum cumque ut illo magni, corporis adipisci. Necessitatibus, dolore! Et saepe nulla veniam exercitationem.',
+    },
+    {
+        id: 'headingFour',
+        colId: "collapseFour",
+        question: 'Exchanges policy for customer',
+        answer:
+            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus recusandae reiciendis maxime dolore earum est optio voluptates quas quidem quibusdam amet asperiores ad, error possimus magni doloribus culpa, aut repellendus!',
+    },
+    {
+        id: 'headingFive',
+        colId: "collapseFive",
+        question: 'Give a way product available?',
+        answer:
+            'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam quisquam deserunt rem, velit nemo in doloremque quos, provident cum ea accusamus, expedita aut a nobis ipsam itaque. Ex, quas ullam.',
+    },
+];
+
+export const faqDataSecond = [
+    {
+        id: 'headingOne1',
+        colId: "collapseOne1",
+        question: 'What is the multi vendor services?',
+        answer: 'Lorem ipsum dolor sit, amet consectetur adipisicing  elit. Commodi voluptatibus sunt nostrum atque eum exercitationem et quidem? A, rem dolorem at dolorum accusantium libero doloremque harum, ipsa vero minus sed.',
+    },
+    {
+        id: 'headingTwo2',
+        colId: "collapseTwo2",
+        question: 'How to buy many products at a time?',
+        answer: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis et architecto quas vitae sunt tenetur odio  officiis ut laudantium, suscipit, illum voluptate aut eligendi nisi voluptatibus fugiat tempora, vero facilis.',
+    },
+    {
+        id: 'headingThree3',
+        colId: "collapseThree3",
+        question: 'Refund policy for customer',
+        answer: 'Lorem ipsum, dolor sit amet consectetur adipisicing   elit. Vel ex quaerat quod? Earum porro nesciunt praesentium, necessitatibus repellat illo officiis perspiciatis dolorem ea perferendis. Iusto, vel. Quia reprehenderit error hic.',
+    },
+    {
+        id: 'headingFour4',
+        colId: "collapseFour4",
+        question: 'Exchanges policy for customer',
+        answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio architecto odit sint aliquam voluptatem quis expedita soluta nulla, minus eaque commodi suscipit unde atque corporis fugiat consequatur quibusdam sit eius!',
+    },
+    {
+        id: 'headingFour5',
+        colId: "collapseFour5",
+        question: 'Give a way product available?',
+        answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere repudiandae repellendus, praesentium beatae aut cum, harum accusantium atque aperiam cupiditate ad quis, a quidem excepturi eligendi nesciunt quibusdam quia perferendis!',
+    },
+];
+
+// About page service data
+export const services = [
+    { id: 1, icon: <Delivery />, title: 'Best Delivery' },
+    { id: 2, icon: <Product />, title: 'Best Product' },
+];
+
+export const servicesList = [
+    { id: 1, icon: <ListStyle />, text: 'Free shipping on order above $200.' },
+    { id: 2, icon: <ListStyle />, text: 'Contact us 24 hours a day, 7 days a week.' },
+    { id: 3, icon: <ListStyle />, text: 'Simply return it within 30 days for an exchange.' },
+    { id: 4, icon: <ListStyle />, text: 'Payment secure.' },
+];
+
+// About choose page data
+export const chooseUsData = [
+    {
+        id: 1,
+        icon: <BrandProduct />,
+        title: 'Branded Products',
+        description: 'Provides quick access laptop while front and accessories pockets help keep',
+    },
+    {
+        id: 2,
+        icon: <CareForYou />,
+        title: 'We care for you',
+        description: 'Provides quick access laptop while front and accessories pockets help keep',
+    },
+    {
+        id: 3,
+        icon: <FastDelivery />,
+        title: 'Fastest Delivery',
+        description: 'Provides quick access laptop while front and accessories pockets help keep',
+    },
+    {
+        id: 4,
+        icon: <Membership />,
+        title: 'Get Membership',
+        description: 'Provides quick access laptop while front and accessories pockets help keep',
+    },
+];
+
+// Home2 process data
+export const processItems = [
+    {
+        icon: shipping,
+        title: 'Free Shipping',
+        description: 'Free shipping over $100',
+    },
+    {
+        icon: payment,
+        title: 'Payment Secure',
+        description: 'Got 100% Payment Safe',
+    },
+    {
+        icon: support,
+        title: 'Support 24/7',
+        description: 'Quality 24/7 Support',
+    },
+    {
+        icon: moneyBack,
+        title: '100% Money Back',
+        description: 'Customers Money Back',
+    },
+    {
+        icon: quality,
+        title: 'Quality Products',
+        description: 'We Insure Product Quality',
+    },
+];
+
+// Home2 Category data
+export const catItems = [
+    {
+        id: 1,
+        image: require("../Assets/img/catagori/cat-1.png"),
+        title: "Women Ethnic"
+    },
+    {
+        id: 2,
+        image: require("../Assets/img/catagori/cat-2.png"),
+        title: "Clothing & Bags"
+    },
+    {
+        id: 3,
+        image: Mens,
+        title: "Men's Wear"
+    },
+    {
+        id: 4,
+        image: require("../Assets/img/catagori/cat-4.png"),
+        title: "Kids wear"
+    },
+    {
+        id: 5,
+        image: require("../Assets/img/catagori/cat-5.png"),
+        title: "Women Western"
+    },
+    {
+        id: 6,
+        image: require("../Assets/img/catagori/cat-6.png"),
+        title: "Accessories"
+    },
+    {
+        id: 7,
+        image: require("../Assets/img/catagori/cat-7.png"),
+        title: "Beauty & Health"
+    },
+]
+
+// Home2 testimonial data
+export const testimonial = [
+    {
+        authorImage: require("../Assets/img/testimonial/author-3-1.png"),
+        shapeImage: require("../Assets/img/testimonial/shape-3-1.png"),
+        quote: "I Really Enjoyed ",
+        quote1: "Working With Jacob",
+        content: "The other hand we denounce with righteou indg ation and di men who are so beguiled and demorali ed by the of pleasure moment.Dislike men who are so beguiled and demoraliz by the charms of pleasure “",
+        authorInfo: {
+            name: "Mathias Herasen",
+            role: "Founder of GamerPay"
+        }
+    },
+    {
+        authorImage: require("../Assets/img/testimonial/author-3-1.png"),
+        shapeImage: require("../Assets/img/testimonial/shape-3-1.png"),
+        quote: "I Really Enjoyed",
+        quote1: "Working With Jacob",
+        content: "The other hand we denounce with righteou indg ation and di men who are so beguiled and demorali ed by the of pleasure moment.Dislike men who are so beguiled and demoraliz by the charms of pleasure “",
+        authorInfo: {
+            name: "Mathias Herasen",
+            role: "Founder of GamerPay"
+        }
+    },
+];
+
+//  Home2 gallery data
+export const galleryData = [
+    { image: require("../Assets/img/project/project-3-1.jpg"), title: "Men's watch", category: "Accessories" },
+    { image: require("../Assets/img/project/project-3-2.jpg"), title: "Shopping Bags", category: "Bags" },
+    { image: require("../Assets/img/project/project-3-3.jpg"), title: "Unique heels", category: "Footwear" },
+    { image: require("../Assets/img/project/project-3-4.jpg"), title: "Combo for women's", category: "Clothing" },
+    { image: require("../Assets/img/project/project-3-5.jpg"), title: "Kids Toys", category: "Kids" },
+    { image: require("../Assets/img/project/project-3-6.jpg"), title: "Red lipstick", category: "Makeup" },
+];
+
+// Home2 brand data
+export const brandImages = [
+    { image: require("../Assets/img/brand/brand-3-1.png"), width: "171", height: "31" },
+    { image: require("../Assets/img/brand/brand-3-2.png"), width: "128", height: "30" },
+    { image: require("../Assets/img/brand/brand-3-3.png"), width: "154", height: "34" },
+    { image: require("../Assets/img/brand/brand-3-4.png"), width: "200", height: "25" },
+    { image: require("../Assets/img/brand/brand-3-5.png"), width: "163", height: "35" },
+    { image: require("../Assets/img/brand/brand-3-6.png"), width: "200", height: "37" }
+];
+
+// Home2 product data
+export const ProductData = [
+    {
+        id: 1,
+        imgSrc: require("../Assets/img/product/product-2-1.jpg"),
+        title: "Diamond ring",
+        oldPrice: "$362.00",
+        newPrice: "$239.52",
+        list: 4
+    },
+    {
+        id: 2,
+        imgSrc: require("../Assets/img/product/product-2-3.jpg"),
+        title: "Trendy Heels",
+        oldPrice: "$500.00",
+        newPrice: "$400.52",
+        list: 4
+    },
+    {
+        id: 3,
+        imgSrc: require("../Assets/img/product/product-2-4.jpg"),
+        title: "Cosmetic bag",
+        oldPrice: "$90.52",
+        newPrice: "$95.00",
+        list: 4
+    },
+    {
+        id: 4,
+        imgSrc: require("../Assets/img/product/product-2-5.jpg"),
+        title: "Nail polish gel",
+        oldPrice: "$25.00",
+        newPrice: "$20.00",
+        list: 4
+    },
+    {
+        id: 5,
+        imgSrc: require("../Assets/img/product/product-2-6.jpg"),
+        title: "Makeup combo",
+        oldPrice: "$230.00",
+        newPrice: "$220.00",
+        list: 4
+    }
 ];
