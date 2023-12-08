@@ -1,9 +1,9 @@
 import React from 'react';
 import { processItems } from '../../Data/Data';
 
-const Process = () => {
+const Process = ({ processRef }) => {
   return (
-    <div id="process" className="tp-feature-5__area tp-feature-5__space">
+    <div id="process" ref={processRef} className="tp-feature-5__area tp-feature-5__space">
       <div className="container custom-container-4">
         <div className="tp-feature-5__border">
           <div className="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-1 row-cols-sm-2">

@@ -1,6 +1,5 @@
 import React from 'react';
 import Hero from './Hero';
-import Process from './Process';
 import Service from './Service';
 import Product from './Product';
 import TextSlider from './TextSlider';
@@ -14,7 +13,6 @@ const Index = () => {
   return (
     <>
       <Hero />
-      <Process />
       <Service />
       <Product />
       <TextSlider />
