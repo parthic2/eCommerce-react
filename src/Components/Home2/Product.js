@@ -26,17 +26,13 @@ const Product = () => {
               <div className="d-flex justify-content-end align-items-end gap-3 pt-10">
                 <div className="tp-feature__arrow-box-prev d-xxl-block">
                   <div className="swiper-button-prev-1">
-                    <button aria-label="Prev Button">
-                      <FaCaretLeft />
-                    </button>
+                    <button aria-label="Prev Button"><FaCaretLeft /></button>
                   </div>
                 </div>
 
                 <div className="tp-feature__arrow-box d-xxl-block">
                   <div className="swiper-button-next-1">
-                    <button aria-label="Next Button">
-                      <FaCaretRight />
-                    </button>
+                    <button aria-label="Next Button"><FaCaretRight /></button>
                   </div>
                 </div>
               </div>
@@ -113,7 +109,9 @@ const Product = () => {
                     </div>
                     <div className="tp-product-2__button-box">
                       <Link className="tp-btn-cart" to="/Home2">
-                        <span><img src={require("../../Assets/img/svg/addCart.svg").default} alt="add to cart" /></span>
+                        <span>
+                          <img src={require("../../Assets/img/svg/addCart.svg").default} alt="add to cart" />
+                        </span>
                         Add To Cart
                       </Link>
                     </div>

@@ -15,7 +15,7 @@ const CopyRight = () => {
             >
               <div className="tp-copyright-2__text text-center text-md-start">
                 <span>
-                  <strong>© 2023</strong> Powered by ABC . All Rights
+                  <strong>© 2023</strong> Powered by eSolution . All Rights
                   Reserved.
                 </span>
               </div>

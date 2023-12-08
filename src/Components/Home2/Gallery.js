@@ -11,13 +11,7 @@ const Gallery = () => {
   return (
     <div className="tp-project-3__area p-relative pt-90 pb-90">
       <div className="tp-project-3__shape-1 d-none d-xl-block">
-        <img
-          src={shape}
-          alt="shape"
-          className="img-fluid"
-          width="120"
-          height="483"
-        />
+        <img src={shape} alt="shape" className="img-fluid" width="120" height="483" />
       </div>
       <div className="container-fluid">
         <div className="row">

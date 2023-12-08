@@ -1,9 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import blog1 from "../../Assets/img/blog/blog1-1.jpg";
-import blog2 from "../../Assets/img/blog/blog1-2.jpg";
-import blog3 from "../../Assets/img/blog/blog1-3.jpg";
 import line from "../../Assets/img/svg/InnerLine.svg";
+import { blogItems } from '../../Data/Data';
 
 const Blog = () => {
   return (
@@ -26,104 +24,30 @@ const Blog = () => {
           </div>
         </div>
         <div className="row">
-          <div
-            className="col-lg-4 col-md-6 col-sm-12 col-12 mt-30 wow tpfadeUp"
-            data-wow-duration=".9s"
-            data-wow-delay=".3s"
-          >
-            <div className="rbt-card variation-03 rbt-hover">
-              <div className="rbt-card-img">
-                <Link className="thumbnail-link" to="/Home3">
-                  <img
-                    src={blog1}
-                    alt="Card"
-                    className="img-fluid"
-                    width="296"
-                    height="197"
-                  />
-                </Link>
-                <div className="tp-blog__thumb-text">
-                  <span>
-                    26 <br /><b>Aug</b>
-                  </span>
+          {blogItems.map((item, index) => (
+            <div key={index} className="col-lg-4 col-md-6 col-sm-12 col-12 mt-30">
+              <div className="rbt-card variation-03 rbt-hover">
+                <div className="rbt-card-img">
+                  <Link className="thumbnail-link" to="/Home3">
+                    <img src={item.image} alt="Card" className="img-fluid" width="296" height="197" />
+                  </Link>
+                  <div className="tp-blog__thumb-text">
+                    <span>
+                      {item.date.day} <br /><b>{item.date.month}</b>
+                    </span>
+                  </div>
                 </div>
-              </div>
-              <div className="rbt-card-body">
-                <div className="tp-blog__meta">
-                  <span>Posted by 21 lab -<b>Nov 13, 2022</b></span>
+                <div className="rbt-card-body">
+                  <div className="tp-blog__meta">
+                    <span>Posted by {item.postedBy}</span>
+                  </div>
+                  <h5 className="tp-blog__title">
+                    <Link to="/Home3">{item.title}</Link>
+                  </h5>
                 </div>
-                <h5 className="tp-blog__title">
-                  <Link to="/Home3">Winter 2023 Trending Fashion Market.</Link>
-                </h5>
               </div>
             </div>
-          </div>
-
-          <div
-            className="col-lg-4 col-md-6 col-sm-12 col-12 mt-30 wow tpfadeUp"
-            data-wow-duration=".9s"
-            data-wow-delay=".5s"
-          >
-            <div className="rbt-card variation-03 rbt-hover">
-              <div className="rbt-card-img">
-                <Link className="thumbnail-link" to="/Home3">
-                  <img
-                    src={blog2}
-                    alt="Card"
-                    className="img-fluid"
-                    width="296"
-                    height="197"
-                  />
-                </Link>
-                <div className="tp-blog__thumb-text">
-                  <span>
-                    12 <br /><b>Feb</b>
-                  </span>
-                </div>
-              </div>
-              <div className="rbt-card-body">
-                <div className="tp-blog__meta">
-                  <span>Posted by 21 lab -<b>Nov 13, 2022</b></span>
-                </div>
-                <h5 className="tp-blog__title">
-                  <Link to="/Home3">Fashion Market Reveals Her Jacket.</Link>
-                </h5>
-              </div>
-            </div>
-          </div>
-
-          <div
-            className="col-lg-4 col-md-6 col-sm-12 col-12 mt-30 wow tpfadeUp"
-            data-wow-duration=".9s"
-            data-wow-delay=".7s"
-          >
-            <div className="rbt-card variation-03 rbt-hover">
-              <div className="rbt-card-img">
-                <Link className="thumbnail-link" to="/Home3">
-                  <img
-                    src={blog3}
-                    alt="Card"
-                    className="img-fluid"
-                    width="296"
-                    height="197"
-                  />
-                </Link>
-                <div className="tp-blog__thumb-text">
-                  <span>
-                    09<br /><b>Jan</b>
-                  </span>
-                </div>
-              </div>
-              <div className="rbt-card-body">
-                <div className="tp-blog__meta">
-                  <span>Posted by 21 lab -<b>Nov 13, 2022</b></span>
-                </div>
-                <h5 className="tp-blog__title">
-                  <Link to="/Home3">Summer Trending Fashion Market.</Link>
-                </h5>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>

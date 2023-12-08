@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { HiMiniBars3BottomLeft } from "react-icons/hi2";
+import { FaAngleDown } from "react-icons/fa6";
 import call from "../../../Assets/img/svg/call.svg";
 import { navigationLinks, yourCategoryArray } from '../../../Data/Data';
 import { Home1Menu } from '../../../svg/svg';
@@ -19,7 +20,7 @@ const BottomHeader = ({ isHeaderSticky, handleSidebarOpen }) => {
             >
               <button className="tp-category-menu-btn tp-category-menu-toggle">
                 <span><HiMiniBars3BottomLeft /></span>
-                All Categories
+                All Categories <button className="tp_button_down"><FaAngleDown /></button>
               </button>
               <nav className="tp-category-menu-content">
                 <ul>

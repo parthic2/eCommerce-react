@@ -12,13 +12,7 @@ const Categories = () => {
   return (
     <div className="tp-catagori-2__area p-relative">
       <div className="tp-catagori-2__shape-1 d-none d-md-block">
-        <img
-          src={shape}
-          alt="shape"
-          className="img-fluid"
-          width="12"
-          height="12"
-        />
+        <img src={shape} alt="shape" className="img-fluid" width="12" height="12" />
       </div>
       <div className="container">
         <div className="row">
@@ -39,17 +33,13 @@ const Categories = () => {
               <div className="d-flex justify-content-end align-items-end gap-3 pt-10">
                 <div className="tp-feature__arrow-box-prev d-xxl-block">
                   <div className="swiper-button-prev">
-                    <button aria-label="Prev Button">
-                      <FaCaretLeft />
-                    </button>
+                    <button aria-label="Prev Button"><FaCaretLeft /></button>
                   </div>
                 </div>
 
                 <div className="tp-feature__arrow-box d-xxl-block">
                   <div className="swiper-button-next">
-                    <button aria-label="Next Button">
-                      <FaCaretRight />
-                    </button>
+                    <button aria-label="Next Button"><FaCaretRight /></button>
                   </div>
                 </div>
               </div>

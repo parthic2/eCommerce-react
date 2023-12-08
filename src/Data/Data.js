@@ -1,4 +1,4 @@
-import { FreeShipping, Handmade, MoneyBack, PaymentSecure, Support, GiftsSets, Candles, Book, Cosmetics, HandyCream, PlasticGifts, SilkAccessories, Service1, Service2, Service3, Service4, Service5, Service6, Service7, Service8, Service9, Service10, Service11, Service12, Delivery, Product, ListStyle, BrandProduct, CareForYou, FastDelivery, Membership } from "../svg/svg";
+import { FreeShipping, Handmade, MoneyBack, PaymentSecure, Support, GiftsSets, Candles, Book, Cosmetics, HandyCream, PlasticGifts, SilkAccessories, Service1, Service2, Service3, Service4, Service5, Service6, Service7, Service8, Service9, Service10, Service11, Service12, Service, ListStyle, BrandProduct, CareForYou, FastDelivery, Membership, Team, Money, Secure, Shipping, TopSupport, Delivery, Product } from "../svg/svg";
 import shipping from "../Assets/img/svg/shipping.svg";
 import payment from "../Assets/img/svg/payment.svg";
 import support from "../Assets/img/svg/support.svg";
@@ -432,8 +432,8 @@ export const faqDataSecond = [
 
 // About page service data
 export const services = [
-    { id: 1, icon: <Delivery />, title: 'Best Delivery' },
-    { id: 2, icon: <Product />, title: 'Best Product' },
+    { id: 1, icon: <Service />, title: 'Best Delivery' },
+    { id: 2, icon: <Service />, title: 'Best Product' },
 ];
 
 export const servicesList = [
@@ -627,4 +627,428 @@ export const ProductData = [
         newPrice: "$220.00",
         list: 4
     }
+];
+
+// Home2 Service section data
+export const feature = [
+    {
+        title: "First of all have to Add your collection",
+        content: "Lorem ipsum det, cowec tetur duis nec fringi det, consec t eturlagix adipiscing eliet."
+    },
+    {
+        title: "Perfect and time accurate Best Delivery",
+        content: "Lorem ipsum det, cowec tetur duis nec fringi det, consec t eturlagix adipiscing eliet."
+    },
+    {
+        title: "Low cost & Branded Product & Enjoy It",
+        content: "Lorem ipsum det, cowec tetur duis nec fringi det, consec t eturlagix adipiscing eliet."
+    }
+];
+
+// Home3 process data
+export const process = [
+    {
+        icon: <Shipping />,
+        title: 'Free Shipping',
+        description: 'Free shipping over $100',
+    },
+    {
+        icon: <Secure />,
+        title: 'Payment Secure',
+        description: 'Got 100% Payment Safe',
+    },
+    {
+        icon: <TopSupport />,
+        title: 'Support 24/7',
+        description: 'Top quality 24/7 Support',
+    },
+    {
+        icon: <Money />,
+        title: '100% Money Back',
+        description: 'Customers Money Backs',
+    },
+];
+
+// Home3 About data
+export const aboutItems = [
+    {
+        icon: <Delivery />,
+        title: 'Best Delivery',
+        description: 'Lorem ipsum dolor sit amet.',
+    },
+    {
+        icon: <Product />,
+        title: 'Best Products',
+        description: 'Lorem ipsum dolor sit amet.',
+    },
+];
+
+// Home3 Service data
+export const serviceItems = [
+    {
+        imgSrc: require("../Assets/img/service/service-1-1.jpg"),
+        title: 'Classic Skin care',
+        link: '/Home3',
+        description: 'Our company provides a full range of services private houses and cottages since 19 Our',
+    },
+    {
+        imgSrc: require("../Assets/img/service/service-1-2.jpg"),
+        title: 'Trendy Makeup Combo',
+        link: '/Home3',
+        description: 'Our company provides a full range of services private houses and cottages since 19 Our',
+    },
+    {
+        imgSrc: require("../Assets/img/service/service-1-3.jpg"),
+        title: 'Unique Unisex Perfume',
+        link: '/Home3',
+        description: 'Our company provides a full range of services private houses and cottages since 19 Our',
+    },
+    {
+        imgSrc: require("../Assets/img/service/service-1-4.jpg"),
+        title: 'Nail Polish Combo',
+        link: '/Home3',
+        description: 'Our company provides a full range of services private houses and cottages since 19 Our',
+    },
+    {
+        imgSrc: require("../Assets/img/service/service-1-5.jpg"),
+        title: 'Classic Men T-shirt',
+        link: '/Home3',
+        description: 'Our company provides a full range of services private houses and cottages since 19 Our',
+    },
+];
+
+// Home3 features data
+export const featureData = [
+    {
+        icon: <BrandProduct />,
+        title: 'Eco-friendly Local Products',
+    },
+    {
+        icon: <CareForYou />,
+        title: '500,00+ customizable products',
+    },
+    {
+        icon: <FastDelivery />,
+        title: 'Starting from 100 Boxes',
+    },
+    {
+        icon: <Membership />,
+        title: 'Best brand for Customer',
+    },
+    {
+        icon: <Team />,
+        title: 'Exclusive team members',
+    },
+];
+
+export const contentItems = [
+    {
+        number: '01',
+        title: 'First of all have to Add your collection',
+        content:
+            'Lorem ipsum det, cowec tetur duis nec fringi det, consec t eturlagix adipiscing eliet',
+    },
+    {
+        number: '02',
+        title: 'Perfect and time accurate Best Delivery',
+        content:
+            'Lorem ipsum det, cowec tetur duis nec fringi det, consec t eturlagix adipiscing eliet',
+    },
+    {
+        number: '03',
+        title: 'Low cost & Branded Product & Enjoy It',
+        content:
+            'Lorem ipsum det, cowec tetur duis nec fringi det, consec t eturlagix adipiscing eliet',
+    },
+];
+
+// Home3 Blog data
+export const blogItems = [
+    {
+        date: {
+            day: '26',
+            month: 'Aug',
+        },
+        postedBy: '21 lab - Nov 13, 2022',
+        title: 'Winter 2023 Trending Fashion Market.',
+        image: require("../Assets/img/blog/blog1-1.jpg"),
+    },
+    {
+        date: {
+            day: '12',
+            month: 'Feb',
+        },
+        postedBy: '21 lab - Nov 13, 2022',
+        title: 'Fashion Market Reveals Her Jacket.',
+        image: require("../Assets/img/blog/blog1-2.jpg"),
+    },
+    {
+        date: {
+            day: '09',
+            month: 'Jan',
+        },
+        postedBy: '21 lab - Nov 13, 2022',
+        title: 'Summer Trending Fashion Market.',
+        image: require("../Assets/img/blog/blog1-3.jpg"),
+    },
+];
+
+// Home3 tetstimoinal data
+export const testimonials = [
+    {
+        author: "Mathias Herasen",
+        role: "Founder of GamerPay",
+        image: require("../Assets/img/testimonial/author-1-1.png"),
+        text: "Modern customer service software solution that was exactly what we were looking for. From the feature set to the pricing model primchat great for us.",
+    },
+    {
+        author: "Daniel Lei",
+        role: "Founder of GamerPay",
+        image: require("../Assets/img/testimonial/author-2-1.png"),
+        text: "I have zero experience with web design and found this template super easy to use. Very helpful support team too.",
+    },
+    {
+        author: "Rodney Parker",
+        role: "Founder of GamerPay",
+        image: require("../Assets/img/testimonial/author-3-1.png"),
+        text: "They were so kindly and replied so fast, and they fixed all that I wanted. Thank you so much!",
+    },
+];
+
+// Home3 product data
+export const bagTabData = [
+    {
+        id: 1,
+        imgSrc: require("../Assets/img/product/product-1-1.jpg"),
+        title: "Green men's shoes",
+        oldPrice: "$6.00",
+        newPrice: "$20.52",
+        list: 4
+    },
+    {
+        id: 2,
+        imgSrc: require("../Assets/img/product/product-1-2.jpg"),
+        title: "green and gold leather bag",
+        oldPrice: "$5.00",
+        newPrice: "$90.52",
+        list: 4
+    },
+    {
+        id: 3,
+        imgSrc: require("../Assets/img/product/product-1-3.jpg"),
+        title: "women's brown pointed-toe",
+        oldPrice: "$10.00",
+        newPrice: "$70.00",
+        list: 4
+    },
+    {
+        id: 4,
+        imgSrc: require("../Assets/img/product/product-1-4.jpg"),
+        title: "pink leather sling bag",
+        oldPrice: "$4.20",
+        newPrice: "$30.00",
+        list: 4
+    },
+    {
+        id: 5,
+        imgSrc: require("../Assets/img/product/product-1-5.jpg"),
+        title: "yellow leather open-toe",
+        oldPrice: "$20.00",
+        newPrice: "$150.00",
+        list: 4
+    },
+    {
+        id: 6,
+        imgSrc: require("../Assets/img/product/product-1-6.jpg"),
+        title: "Modern pink bag",
+        oldPrice: "$11.00",
+        newPrice: "$77.00",
+        list: 4
+    },
+    {
+        id: 7,
+        imgSrc: require("../Assets/img/product/product-1-7.jpg"),
+        title: "green & brown leather bag",
+        oldPrice: "$362.00",
+        newPrice: "$239.52",
+        list: 4
+    },
+    {
+        id: 8,
+        imgSrc: require("../Assets/img/product/product-1-8.jpg"),
+        title: "Adidas white shoes",
+        oldPrice: "$15.00",
+        newPrice: "$100.00",
+        list: 4
+    },
+];
+
+export const womenTabData = [
+    {
+        id: 1,
+        imgSrc: require("../Assets/img/product/product-1-24.jpg"),
+        title: "Georgette Saree",
+        oldPrice: "$25.00",
+        newPrice: "$300.00",
+        list: 4
+    },
+    {
+        id: 2,
+        imgSrc: require("../Assets/img/product/product-1-25.jpg"),
+        title: "Handembroided Clutches",
+        oldPrice: "$33.00",
+        newPrice: "$120.00",
+        list: 4
+    },
+    {
+        id: 3,
+        imgSrc: require("../Assets/img/product/product-1-26.jpg"),
+        title: "casual Cotton slub kurta",
+        oldPrice: "$14.00",
+        newPrice: "$50.00",
+        list: 4
+    },
+    {
+        id: 4,
+        imgSrc: require("../Assets/img/product/product-1-27.jpg"),
+        title: "suit set for women",
+        oldPrice: "$5.00",
+        newPrice: "$60.52",
+        list: 4
+    }
+];
+
+export const mensTabData = [
+    {
+        id: 1,
+        imgSrc: require("../Assets/img/product/product-1-17.jpg"),
+        title: "men's black hoodie",
+        oldPrice: "$6.00",
+        newPrice: "$35.52",
+        list: 4
+    },
+    {
+        id: 2,
+        imgSrc: require("../Assets/img/product/product-1-18.jpg"),
+        title: "brown wallet",
+        oldPrice: "$2.00",
+        newPrice: "$15.52",
+        list: 4
+    },
+    {
+        id: 3,
+        imgSrc: require("../Assets/img/product/product-1-19.jpg"),
+        title: "trendy funky jeans",
+        oldPrice: "$9.00",
+        newPrice: "$55.00",
+        list: 4
+    }
+];
+
+export const kidsTabData = [
+    {
+        id: 1,
+        imgSrc: require("../Assets/img/product/product-1-20.jpg"),
+        title: "kid's cloth combo",
+        oldPrice: "$10.00",
+        newPrice: "$55.00",
+        list: 4
+    },
+    {
+        id: 2,
+        imgSrc: require("../Assets/img/product/product-1-21.jpg"),
+        title: "white & red nike sneakers",
+        oldPrice: "$5.00",
+        newPrice: "$69.00",
+        list: 4
+    }
+];
+
+export const beautyTabData = [
+    {
+        id: 1,
+        imgSrc: require("../Assets/img/product/product-1-9.jpg"),
+        title: "Skincare pineapple juice",
+        oldPrice: "$0.00",
+        newPrice: "$10.00",
+        list: 4
+    },
+    {
+        id: 2,
+        imgSrc: require("../Assets/img/product/product-1-10.jpg"),
+        title: "Hair oil",
+        oldPrice: "$6.00",
+        newPrice: "$35.00",
+        list: 4
+    },
+    {
+        id: 3,
+        imgSrc: require("../Assets/img/product/product-1-11.jpg"),
+        title: "red lipstick",
+        oldPrice: "$7.00",
+        newPrice: "$45.00",
+        list: 4
+    },
+    {
+        id: 4,
+        imgSrc: require("../Assets/img/product/product-1-12.jpg"),
+        title: "nude nars concealer",
+        oldPrice: "$14.00",
+        newPrice: "$85.10",
+        list: 4
+    }
+];
+
+export const accessoriesTabData = [
+    {
+        id: 1,
+        imgSrc: require("../Assets/img/product/product-1-13.jpg"),
+        title: "trendy women's goggle",
+        oldPrice: "$2.00",
+        newPrice: "$23.52",
+        list: 4
+    },
+    {
+        id: 2,
+        imgSrc: require("../Assets/img/product/product-1-14.jpg"),
+        title: "Red men's cap",
+        oldPrice: "$5.00",
+        newPrice: "$20.00",
+        list: 4
+    },
+    {
+        id: 3,
+        imgSrc: require("../Assets/img/product/product-1-15.jpg"),
+        title: "silver & gold wedding ring",
+        oldPrice: "$40.00",
+        newPrice: "$239.52",
+        list: 4
+    },
+    {
+        id: 4,
+        imgSrc: require("../Assets/img/product/product-1-16.jpg"),
+        title: "white pearl necklace",
+        oldPrice: "$12.00",
+        newPrice: "$360.00",
+        list: 4
+    }
+];
+
+export const westernTabData = [
+    {
+        id: 1,
+        imgSrc: require("../Assets/img/product/product-1-22.jpg"),
+        title: "pink & white floral dress",
+        oldPrice: "$12.00",
+        newPrice: "$55.00",
+        list: 4
+    },
+    {
+        id: 2,
+        imgSrc: require("../Assets/img/product/product-1-23.jpg"),
+        title: "gray sweater & white jeans",
+        oldPrice: "$362.00",
+        newPrice: "$239.52",
+        list: 4
+    },
 ];

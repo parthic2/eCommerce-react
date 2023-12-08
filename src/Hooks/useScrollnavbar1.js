@@ -111,3 +111,50 @@ export const useScrollNavbar2 = () => {
 
     return { isHeaderSticky, isSidebarOpen, handleSidebarOpen, handleSidebarClose };
 };
+
+export const useScrollNavbar3 = () => {
+    const [, setScroll] = useState(window.scrollY);
+    const [isHeaderSticky, setIsHeaderSticky] = useState(false);
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const newScroll = window.scrollY;
+            setScroll(newScroll);
+
+            const headerSticky = document.getElementById('header-sticky');
+
+            if (newScroll < 100) {
+                // Remove the "header-sticky" class
+                setIsHeaderSticky(false);
+                // Remove
+                headerSticky.style.display = 'block';
+                headerSticky.style.borderRadius = '0';
+                headerSticky.style.margin = '0';
+            } else {
+                // Add the "header-sticky" class
+                setIsHeaderSticky(true);
+                // Add
+                headerSticky.style.display = "block";
+                headerSticky.style.borderRadius = "50px";
+                headerSticky.style.margin = "1%";
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    const handleSidebarOpen = () => {
+        setIsSidebarOpen(true);
+    };
+
+    const handleSidebarClose = () => {
+        setIsSidebarOpen(false);
+    };
+
+    return { isHeaderSticky, isSidebarOpen, handleSidebarOpen, handleSidebarClose };
+};

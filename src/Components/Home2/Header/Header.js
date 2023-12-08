@@ -96,13 +96,13 @@ const Header = () => {
                         <Link to="/Home2" aria-label="User">
                           <span><img src={user} alt="user" /></span>
                         </Link>
-                        <Link to="/" aria-label="Heart">
+                        <Link to="/Home2" aria-label="Heart">
                           <span className="heart p-relative">
                             <i><CiHeart /></i>
-                            <b className="tp-header__icon-text">0</b>
+                            <b className="tp-header__icon-text-2">0</b>
                           </span>
                         </Link>
-                        <Link to="/" aria-label="Add To Cart">
+                        <Link to="/Home2" aria-label="Add To Cart">
                           <span className="cart p-relative">
                             <Cart />
                             <b className="tp-header__icon-text">0</b>

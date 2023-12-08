@@ -671,7 +671,12 @@
 
 		i {
 			color: #fab311;
-			padding-right: 2px;
+			padding-right: 6px;
+
+			svg {
+				width: 18px;
+				height: 16px;
+			}
 
 			&.color {
 				color: #d2d3da;

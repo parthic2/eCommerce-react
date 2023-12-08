@@ -3,7 +3,7 @@ import Hero from './Hero';
 import Process from './Process';
 import About from './About';
 import Service from './Service';
-import Product from './Product';
+import Product from './Product/Product';
 import Feature from './Feature';
 import Feedback from './Feedback';
 import Blog from './Blog';

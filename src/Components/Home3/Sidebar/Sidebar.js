@@ -9,7 +9,7 @@ const Sidebar = () => {
   return (
     <>
       <div className="tpoffcanvas__logo">
-        <Link to="/Home2" aria-label="logo">
+        <Link to="/Home3" aria-label="logo">
           eSolution
         </Link>
       </div>
@@ -80,15 +80,15 @@ const Sidebar = () => {
         <ul>
           <li>
             <FaLocationDot />
-            <Link to="/Home2">Melbone st, Australia, Ny 12099</Link>
+            <Link to="/Home3">Melbone st, Australia, Ny 12099</Link>
           </li>
           <li>
             <FaEnvelope />
-            <Link to="/Home2"><span>contact@info.com</span></Link>
+            <Link to="/Home3"><span>contact@info.com</span></Link>
           </li>
           <li>
             <FaPhoneFlip />
-            <Link to="/Home2">+48 555 223 224</Link>
+            <Link to="/Home3">+48 555 223 224</Link>
           </li>
         </ul>
       </div>
@@ -107,10 +107,10 @@ const Sidebar = () => {
       </div>
       <div className="tpoffcanvas__social">
         <div className="social-icon">
-          <Link to="/Home2"><FaTwitter /></Link>
-          <Link to="/Home2"><FaInstagram /></Link>
-          <Link to="/Home2"><FaFacebookF /></Link>
-          <Link to="/Home2"><FaPinterestP /></Link>
+          <Link to="/Home3"><FaTwitter /></Link>
+          <Link to="/Home3"><FaInstagram /></Link>
+          <Link to="/Home3"><FaFacebookF /></Link>
+          <Link to="/Home3"><FaPinterestP /></Link>
         </div>
       </div>
     </>

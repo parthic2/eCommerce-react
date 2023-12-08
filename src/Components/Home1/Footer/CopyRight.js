@@ -16,7 +16,7 @@ const CopyRight = () => {
               <div className="tp-copyright-4__left-box text-center text-md-start">
                 <span>
                   <strong>© 2023</strong>{" "}
-                  Powered by ABC . All Rights
+                  Powered by eSolution . All Rights
                   Reserved.
                 </span>
               </div>
