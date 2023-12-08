@@ -1,22 +1,24 @@
 import { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
 
 const useLoader = () => {
     const [scrollValue, setScrollValue] = useState(0);
-    const [showPreloader, setShowPreloader] = useState(true);
-    const location = useLocation();
+    const [loaderVisible, setLoaderVisible] = useState(true);
 
+    // For Preloader
     useEffect(() => {
-        setTimeout(() => {
-            setShowPreloader(false);
-        }, 5000);
+        // Simulate a delay of 1000ms (1 second)
+        const delay = 1500;
 
-    }, [location.pathname]);
+        // After the delay, hide the loader and show the header
+        const timeoutId = setTimeout(() => {
+            setLoaderVisible(false);
+        }, delay);
 
-    // Check if the current location has changed and show the preloader if it has
-    useEffect(() => {
-        setShowPreloader(true);
-    }, [location.pathname]);
+        // Cleanup the timeout when the component unmounts
+        return () => {
+            clearTimeout(timeoutId);
+        };
+    }, []);
 
     // For Top to bottom button
     useEffect(() => {
@@ -50,7 +52,7 @@ const useLoader = () => {
         };
     }, []);
 
-    return { showPreloader, scrollValue }
+    return { loaderVisible, scrollValue }
 }
 
 export default useLoader;

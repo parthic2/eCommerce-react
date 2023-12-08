@@ -1,8 +1,8 @@
+import { createBrowserRouter } from "react-router-dom";
 import { lazy } from "react";
-import { Route, Routes } from "react-router-dom";
-const RootLayout = lazy(() => import("./Components/Home1/RootLayout"));
-const HomeRoot = lazy(() => import("./Components/Home2/HomeRoot"));
-const Home3Root = lazy(() => import("./Components/Home3/RootLayout"));
+import RootLayout from "./Components/Home1/RootLayout";
+import HomeRoot from "./Components/Home2/HomeRoot";
+import Home3Root from "./Components/Home3/RootLayout";
 const Index = lazy(() => import("./Components/Home1/Index"));
 const HomeIndex = lazy(() => import("./Components/Home2/Index"));
 const Home3Index = lazy(() => import("./Components/Home3/Index"));
@@ -10,19 +10,32 @@ const Service = lazy(() => import("./Pages/Service/Service"));
 const Contact = lazy(() => import("./Pages/Contact/Contact"));
 const About = lazy(() => import("./Pages/About/About"));
 
-export const ApiRoutes = () => (
-    <Routes>
-        <Route element={<RootLayout />}>
-            <Route path="/" element={<Index />} />
-        </Route>
-        <Route element={<HomeRoot />}>
-            <Route path="/Home2" element={<HomeIndex />} />
-        </Route>
-        <Route element={<Home3Root />}>
-            <Route path="/Home2" element={<Home3Index />} />
-        </Route>
-        <Route path="/About" element={<About />} />
-        <Route path="/Service" element={<Service />} />
-        <Route path="/Contact" element={<Contact />} />
-    </Routes>
-)
+export const Router = createBrowserRouter([
+    {
+        path: "/",
+        element: <RootLayout />,
+        children: [{ path: "/", element: <Index /> }],
+    },
+    {
+        path: "/Home2",
+        element: <HomeRoot />,
+        children: [{ path: "/Home2", element: <HomeIndex /> }]
+    },
+    {
+        path: "/Home3",
+        element: <Home3Root />,
+        children: [{ path: "/Home3", element: <Home3Index /> }]
+    },
+    {
+        path: "/About",
+        element: <About />
+    },
+    {
+        path: "/Service",
+        element: <Service />
+    },
+    {
+        path: "/Contact",
+        element: <Contact />
+    },
+]);

@@ -1,19 +1,20 @@
-import { Suspense } from 'react';
+import { Suspense} from 'react';
 import './Assets/css/Style.css';
 import './Assets/css/spacing.css';
 import './Assets/css/animation.css';
-import { ApiRoutes } from './Routes';
+import { RouterProvider } from 'react-router-dom';
+import { Router } from './Routes';
 import { MdKeyboardDoubleArrowUp } from "react-icons/md";
 import loader from "./Assets/img/preloader/loading-2.gif";
 import useLoader from './Hooks/useLoader';
 
 function App() {
-  const { showPreloader, scrollValue } = useLoader();
+  const { loaderVisible, scrollValue }=useLoader();
 
   return (
     <>
       {/* <!-- Preloader start --> */}
-      {showPreloader && (
+      {loaderVisible && (
         <div id="preloader">
           <img src={loader} alt="loader" />
         </div>
@@ -37,7 +38,7 @@ function App() {
       {/* <!-- back-to-top-end  --> */}
 
       <Suspense>
-        <ApiRoutes />
+        <RouterProvider router={Router} />
       </Suspense>
     </>
   );
