@@ -7,7 +7,7 @@ const CopyRight = () => {
     <div className="tp-copyright__area grey-bg tp-copyright__border">
       <div className="container">
         <div className="row">
-          <div className="col-xl-12">
+          <div className="col-xl-12 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".3s">
             <div className="tp-copyright__wrapper d-flex align-items-center justify-content-sm-between justify-content-center">
               <div className="tp-copyright__social-box d-none d-lg-block">
                 <Link to="/Home3"><FaFacebookF /> </Link>

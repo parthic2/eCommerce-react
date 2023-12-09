@@ -14,7 +14,7 @@ const Footer = () => {
         </div>
         <div className="container">
           <div className="row">
-            <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-30">
+            <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-30 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".3s">
               <div className="tp-footer__widget z-index footer-col-1">
                 <div className="tp-footer__logo">
                   <Link to="/Home3" aria-label="E-Solution">
@@ -46,7 +46,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="col-xl-2 col-lg-2 col-md-6 col-sm-6 mb-30">
+            <div className="col-xl-2 col-lg-2 col-md-6 col-sm-6 mb-30 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".5s">
               <div className="tp-footer__widget footer-col-2">
                 <h4 className="tp-footer__widget-title">Navigation</h4>
                 <div className="tp-footer__list">
@@ -61,7 +61,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-30">
+            <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-30 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".7s">
               <div className="tp-footer__widget footer-col-3">
                 <h4 className="tp-footer__widget-title">Other Pages</h4>
                 <div className="tp-footer__list">
@@ -76,7 +76,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-30">
+            <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-30 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".9s">
               <div className="tp-footer__widget footer-col-4">
                 <h4 className="tp-footer__widget-title">Our Newsletter</h4>
                 <div className="tp-footer__form">

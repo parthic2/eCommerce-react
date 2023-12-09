@@ -24,7 +24,7 @@ const Categories = () => {
         </div>
         <div className="row">
           {categoryData.map((category, index) => (
-            <div key={index} className="col-xl-4 col-lg-6 col-md-6 mb-30">
+            <div key={index} className="col-xl-4 col-lg-6 col-md-6 mb-30 wow tpfadeUp" data-wow-duration={category.duration} data-wow-delay={category.delay}>
               <div
                 className="tp-product-4__item"
                 style={{ backgroundImage: `url(${category.image})` }}

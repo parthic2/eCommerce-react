@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import shape42 from '../../Assets/img/hero/shape-4-2.png';
 import shape43 from '../../Assets/img/hero/shape-4-3.png';
@@ -8,8 +8,15 @@ import heroShape41 from '../../Assets/img/hero/hero-shape-4-1.png';
 import heroShape42 from '../../Assets/img/hero/hero-shape-4-2.png';
 import heroShape43 from '../../Assets/img/hero/hero-shape-4-3.png';
 import { ShopNow } from '../../svg/svg';
+import WOW from 'wowjs';
 
 const Hero = () => {
+  useEffect(() => {
+    new WOW.WOW({
+      live: false
+    }).init();
+  }, [])
+
   return (
     <div className={`tp-hero-4__area fix`}>
       <div className="tp-hero-4__bg p-relative">

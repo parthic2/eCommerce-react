@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import shape1 from "../../Assets/img/hero/hero-shape-1-5.png";
 import shape2 from "../../Assets/img/hero/hero-shape-1-7.png";
@@ -8,8 +8,15 @@ import shape5 from "../../Assets/img/hero/hero-shape-1-9.png";
 import hero from "../../Assets/img/hero/hero-1.png";
 import line from "../../Assets/img/svg/InnerLine.svg";
 import { ShopHand } from '../../svg/svg';
+import WOW from 'wowjs';
 
 const Hero = () => {
+  useEffect(() => {
+    new WOW.WOW({
+      live: false
+    }).init();
+  }, [])
+
   return (
     <div className="tp-hero__area z-index">
       <div className="tp-hero__bg tp-hero__height p-relative fix">
@@ -27,10 +34,10 @@ const Hero = () => {
             <div className="col-xl-6 col-lg-6">
               <div className="tp-hero__left-box z-index">
                 <div className="tp-hero__section-box">
-                  <span className="tp-hero-subtitle">
+                  <span className="tp-hero-subtitle wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".3s">
                     Beats Solo Stylish Design
                   </span>
-                  <h3 className="tp-hero-title">
+                  <h3 className="tp-hero-title wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".5s">
                     <span className="p-relative">
                       20% Off {" "}
                       <span className="tp-title-shape">
@@ -40,12 +47,8 @@ const Hero = () => {
                     Beats <br /> Solo Headphones
                   </h3>
                 </div>
-                <div className="tp-hero__left-text">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit, sed do
-                  </p>
+                <div className="tp-hero__left-text wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".7s">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
                   <Link className="tp-main-btn" to="/Home3">
                     Let’s start — shop now
                     <i><ShopHand /></i>

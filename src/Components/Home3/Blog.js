@@ -25,7 +25,7 @@ const Blog = () => {
         </div>
         <div className="row">
           {blogItems.map((item, index) => (
-            <div key={index} className="col-lg-4 col-md-6 col-sm-12 col-12 mt-30">
+            <div key={index} className="col-lg-4 col-md-6 col-sm-12 col-12 mt-30 wow tpfadeUp" data-wow-duration={item.duration} data-wow-delay={item.delay}>
               <div className="rbt-card variation-03 rbt-hover">
                 <div className="rbt-card-img">
                   <Link className="thumbnail-link" to="/Home3">

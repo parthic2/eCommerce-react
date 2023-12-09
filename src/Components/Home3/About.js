@@ -29,7 +29,7 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="col-xl-6 col-lg-6">
+          <div className="col-xl-6 col-lg-6 wow tpfadeRight" data-wow-duration=".9s" data-wow-delay=".5s">
             <div className="tp-about__item-wrap">
               <div className="tp-about__section-box">
                 <span className="tp-section-subtitle">About Our Company</span>

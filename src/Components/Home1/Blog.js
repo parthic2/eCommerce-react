@@ -24,17 +24,11 @@ const Blog = () => {
         </div>
         <div className="row">
           {blogData.map((blog, index) => (
-            <div key={index} className="col-xl-4 col-lg-4 col-md-6 mb-50">
+            <div key={index} className="col-xl-4 col-lg-4 col-md-6 mb-50 wow tpfadeUp" data-wow-duration={blog.duration} data-wow-delay={blog.delay}>
               <div className="tp-blog-4__item">
                 <div className="tp-blog-4__thumb p-relative">
                   <Link to="/">
-                    <img
-                      src={blog.image}
-                      alt="blog"
-                      className="img-fluid"
-                      width="356"
-                      height="237"
-                    />
+                    <img src={blog.image} alt="blog" className="img-fluid" width="356" height="237" />
                   </Link>
                   <div className="tp-blog-4__thumb-text">
                     <span>BY: {blog.author}</span>

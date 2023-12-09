@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import scan from "../../../Assets/img/footer/thumb-sm.png";
 import appStore from "../../../Assets/img/footer/thumb-sm-2.png";
@@ -7,9 +7,11 @@ import card from "../../../Assets/img/footer/thumb-sm-4.png";
 import CopyRight from './CopyRight';
 import { featureItems } from '../../../Data/Data';
 import { EmailLogo } from '../../../svg/svg';
+import WOW from 'wowjs';
 
-const FooterFeatureItem = ({ icon, title, description }, index) => (
-  <div className={`col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-30`} key={index}>
+const FooterFeatureItem = ({ icon, title, description, duration, delay }, index) => (
+  <div className={`col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-30 wow tpfadeUp`} key={index}
+    data-wow-duration={duration} data-wow-delay={delay}>
     <div className={`tp-footer-4-top__item item-border-${index + 1}`}>
       <div className="tp-feature-3__item d-flex align-items-center">
         <div className="tp-feature-3__icon">
@@ -25,6 +27,12 @@ const FooterFeatureItem = ({ icon, title, description }, index) => (
 );
 
 const Footer = () => {
+  useEffect(() => {
+    new WOW.WOW({
+      live: false
+    }).init();
+  }, [])
+
   return (
     <footer className="bg-shadow">
       <div className="tp-footer-4-top__area pt-65">
@@ -42,7 +50,9 @@ const Footer = () => {
       <div className="tp-footer-4__area pt-65 mb-55">
         <div className="container custom-container-3">
           <div className="row">
-            <div className="col-xl-3 col-lg-4 col-md-6 mb-30">
+            <div className="col-xl-3 col-lg-4 col-md-6 mb-30 wow tpfadeUp"
+              data-wow-duration=".9s"
+              data-wow-delay=".3s">
               <div className="tp-footer-4__widget footer-col-9">
                 <div className="tp-footer-4__logo">
                   <Link to="/" aria-label="E-Solution">
@@ -99,8 +109,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div
-              className="col-xl-3 col-lg-4 col-md-6 mb-30 wow tpfadeUp"
+            <div className="col-xl-3 col-lg-4 col-md-6 mb-30 wow tpfadeUp"
               data-wow-duration=".9s"
               data-wow-delay=".5s"
             >
@@ -117,8 +126,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div
-              className="col-xl-2 col-lg-4 col-md-6 mb-30 wow tpfadeUp"
+            <div className="col-xl-2 col-lg-4 col-md-6 mb-30 wow tpfadeUp"
               data-wow-duration=".9s"
               data-wow-delay=".7s"
             >
@@ -137,8 +145,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div
-              className="col-xl-4 col-lg-4 col-md-6 mb-30 wow tpfadeUp"
+            <div className="col-xl-4 col-lg-4 col-md-6 mb-30 wow tpfadeUp"
               data-wow-duration=".9s"
               data-wow-delay=".9s"
             >

@@ -1,4 +1,4 @@
-import { Suspense} from 'react';
+import { Suspense } from 'react';
 import './Assets/css/Style.css';
 import './Assets/css/spacing.css';
 import './Assets/css/animation.css';
@@ -9,7 +9,7 @@ import loader from "./Assets/img/preloader/loading-2.gif";
 import useLoader from './Hooks/useLoader';
 
 function App() {
-  const { loaderVisible, scrollValue }=useLoader();
+  const { loaderVisible, scrollValue } = useLoader();
 
   return (
     <>

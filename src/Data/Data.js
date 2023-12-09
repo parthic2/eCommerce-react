@@ -140,9 +140,9 @@ export const InviTabData = [
 
 // feature data
 export const features = [
-    { image: require("../Assets/img/feature/feature-3-11.jpg"), title: "Clothing & Bags" },
-    { image: require("../Assets/img/feature/feature-3-22.jpg"), title: "Women's Western" },
-    { image: require("../Assets/img/feature/feature-3-33.jpg"), title: "Beauty & Health" },
+    { image: require("../Assets/img/feature/feature-3-11.jpg"), title: "Clothing & Bags", duration: ".9s", delay: ".3s" },
+    { image: require("../Assets/img/feature/feature-3-22.jpg"), title: "Women's Western", duration: ".9s", delay: ".5s" },
+    { image: require("../Assets/img/feature/feature-3-33.jpg"), title: "Beauty & Health", duration: ".9s", delay: ".7s" },
 ];
 
 // Deal data
@@ -155,12 +155,12 @@ export const timeItems = [
 
 // Categories data
 export const categoryData = [
-    { image: require("../Assets/img/product/product-2-7.png"), title: "Bag & Clothing", products: 108 },
-    { image: require("../Assets/img/product/product-2-8.png"), title: "Beauty & Health", products: 54 },
-    { image: require("../Assets/img/product/product-2-9.png"), title: "Men's Collection", products: 312 },
-    { image: require("../Assets/img/product/product-2-10.png"), title: "Jewelry & Accessories", products: 76 },
-    { image: require("../Assets/img/product/product-2-11.jpg"), title: "Women's Ethnic", products: 243 },
-    { image: require("../Assets/img/product/product-2-12.jpg"), title: "Women's Western", products: 142 },
+    { image: require("../Assets/img/product/product-2-7.png"), title: "Bag & Clothing", products: 108, duration: ".9s", delay: ".3s" },
+    { image: require("../Assets/img/product/product-2-8.png"), title: "Beauty & Health", products: 54, duration: ".9s", delay: ".5s" },
+    { image: require("../Assets/img/product/product-2-9.png"), title: "Men's Collection", products: 312, duration: ".9s", delay: ".7s" },
+    { image: require("../Assets/img/product/product-2-10.png"), title: "Jewelry & Accessories", products: 76, duration: ".9s", delay: ".8s" },
+    { image: require("../Assets/img/product/product-2-11.jpg"), title: "Women's Ethnic", products: 243, duration: ".9s", delay: "1s" },
+    { image: require("../Assets/img/product/product-2-12.jpg"), title: "Women's Western", products: 142, duration: ".9s", delay: "1.2s" },
 ];
 
 // Blog data
@@ -171,6 +171,7 @@ export const blogData = [
         title: "the best fashion influencer",
         date: "02 Apr 2021",
         comments: "03",
+        duration: ".9s", delay: ".3s"
     },
     {
         image: require("../Assets/img/blog/blog-4-2.jpg"),
@@ -178,6 +179,7 @@ export const blogData = [
         title: "Vogue shopping weekend 2023",
         date: "02 Apr 2021",
         comments: "03",
+        duration: ".9s", delay: ".5s"
     },
     {
         image: require("../Assets/img/blog/blog-4-3.jpg"),
@@ -185,6 +187,7 @@ export const blogData = [
         title: "Winter trending fashion collection",
         date: "02 Apr 2021",
         comments: "03",
+        duration: ".9s", delay: ".7s"
     },
 ];
 
@@ -226,21 +229,25 @@ export const featureItems = [
         icon: <FreeShipping />,
         title: 'Free Shipping',
         description: 'Free shipping over $100',
+        duration: ".9s", delay: ".3s"
     },
     {
         icon: <Support />,
         title: 'Support 24/7',
         description: 'Contact us 24 hours a day',
+        duration: ".9s", delay: ".5s"
     },
     {
         icon: <MoneyBack />,
         title: '100% Money Back',
         description: 'You have 30 days to Return',
+        duration: ".9s", delay: ".7s"
     },
     {
         icon: <PaymentSecure />,
         title: 'Payment Secure',
         description: 'We ensure secure payment',
+        duration: ".9s", delay: ".9s"
     },
 ];
 
@@ -772,6 +779,7 @@ export const blogItems = [
         postedBy: '21 lab - Nov 13, 2022',
         title: 'Winter 2023 Trending Fashion Market.',
         image: require("../Assets/img/blog/blog1-1.jpg"),
+        duration: ".9s", delay: ".3s"
     },
     {
         date: {
@@ -781,6 +789,7 @@ export const blogItems = [
         postedBy: '21 lab - Nov 13, 2022',
         title: 'Fashion Market Reveals Her Jacket.',
         image: require("../Assets/img/blog/blog1-2.jpg"),
+        duration: ".9s", delay: ".5s"
     },
     {
         date: {
@@ -790,6 +799,7 @@ export const blogItems = [
         postedBy: '21 lab - Nov 13, 2022',
         title: 'Summer Trending Fashion Market.',
         image: require("../Assets/img/blog/blog1-3.jpg"),
+        duration: ".9s", delay: ".7s"
     },
 ];
 

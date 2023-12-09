@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FaPlay } from "react-icons/fa6";
 import service from "../../Assets/img/service/service-3-3.jpg";
 import shape from "../../Assets/img/service/shape-3-3.jpg";
 import { Plus } from '../../svg/svg';
 import { services, servicesList } from '../../Data/Data';
+import WOW from 'wowjs';
 
 const Service = () => {
+  useEffect(() => {
+    new WOW.WOW({
+      live: false
+    }).init();
+  }, [])
+
   return (
     <div className="tp-service-2__area pt-120 pb-120">
       <div className="container">
@@ -33,7 +40,9 @@ const Service = () => {
               </div>
             </div>
           </div>
-          <div className="col-xl-6 col-lg-6">
+          <div className="col-xl-6 col-lg-6 wow tpfadeRight"
+            data-wow-duration=".9s"
+            data-wow-delay=".5s">
             <div className="tp-service-2__right-box-2">
               <div className="tp-service-2__section-title mb-30">
                 <span className="tp-gradiant-section-subtitle">About us</span>

@@ -34,7 +34,8 @@ const Footer = () => {
           </div>
           <div className="tp-footer-2__ptb">
             <div className="row">
-              <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-50">
+              <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-50 wow tpfadeUp" data-wow-duration=".9s"
+                data-wow-delay=".3s">
                 <div className="tp-footer-2__widget footer-col-5">
                   <div className="tp-footer-2__logo">
                     <Link to="/Home2" aria-label="E-Solution">
@@ -56,7 +57,8 @@ const Footer = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-50">
+              <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-50 wow tpfadeUp" data-wow-duration=".9s"
+                data-wow-delay=".5s">
                 <div className="tp-footer-2__widget footer-col-6">
                   <h1 className="tp-footer-2__widget-title">Our office</h1>
                   <div className="tp-footer-2__list">
@@ -70,7 +72,8 @@ const Footer = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-50">
+              <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-50 wow tpfadeUp" data-wow-duration=".9s"
+                data-wow-delay=".7s">
                 <div className="tp-footer-2__widget footer-col-7">
                   <h1 className="tp-footer-2__widget-title">Find It Fast</h1>
                   <div className="tp-footer-2__list">
@@ -84,7 +87,8 @@ const Footer = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-50">
+              <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-50 wow tpfadeUp" data-wow-duration=".9s"
+                data-wow-delay=".9s">
                 <MapSection />
               </div>
             </div>

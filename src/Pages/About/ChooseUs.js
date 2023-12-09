@@ -22,7 +22,7 @@ const ChooseUs = () => {
           {chooseUsData.map((item) => (
             <div
               key={item.id}
-              className={`col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-30 wow tpfadeUp${item.id}`}
+              className={`col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-30 wow tpfadeUp`}
               data-wow-duration=".9s"
               data-wow-delay={`.${item.id * 2 - 1}s`}
             >

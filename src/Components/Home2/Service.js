@@ -45,7 +45,7 @@ const Service = () => {
               </div>
             </div>
           </div>
-          <div className="col-xl-6 col-lg-6">
+          <div className="col-xl-6 col-lg-6 wow tpfadeRight" data-wow-duration=".9s" data-wow-delay=".5s">
             <div className="tp-feature-2__right-box">
               <div className="tp-feature-2__section-box mb-40">
                 <span className="tp-gradiant-section-subtitle">Some features of Our’s</span>

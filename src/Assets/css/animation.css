@@ -244,3 +244,74 @@
     animation: zoomIn 0.6s ease-in-out;
     display: block;
 }
+
+
+@-webkit-keyframes tpfadeRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(40px);
+        transform: translateX(40px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes tpfadeRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(40px);
+        -ms-transform: translateX(40px);
+        transform: translateX(40px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.tpfadeRight {
+    -webkit-animation-name: tpfadeRight;
+    animation-name: tpfadeRight;
+}
+
+@-webkit-keyframes tpfadeUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(40px);
+        transform: translateY(40px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes tpfadeUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(40px);
+        -ms-transform: translateY(40px);
+        transform: translateY(40px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+.tpfadeUp {
+    -webkit-animation-name: tpfadeUp;
+    animation-name: tpfadeUp;
+}
