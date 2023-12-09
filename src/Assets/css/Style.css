@@ -5594,7 +5594,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
   border: none;
 }
 
-.tp-offcanvas-category-toggle::after {
+/* .tp-offcanvas-category-toggle::after {
   position: absolute;
   content: "\f107";
   right: 20px;
@@ -5602,7 +5602,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
   transform: translateY(-50%);
   font-size: 16px;
   font-family: "Font Awesome 6 Pro";
-}
+} */
 
 .tp-offcanvas-category-toggle i {
   margin-right: 14px;

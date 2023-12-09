@@ -936,15 +936,15 @@
 	padding: 20px 20px;
 	border: none;
 
-	&::after {
-		position: absolute;
-		content: "\f107";
-		right: 20px;
-		top: 50%;
-		@include mixins.transform(translateY(-50%));
-		font-size: 16px;
-		font-family: "Font Awesome 6 Pro";
-	}
+	// &::after {
+	// 	position: absolute;
+	// 	content: "\f107";
+	// 	right: 20px;
+	// 	top: 50%;
+	// 	@include mixins.transform(translateY(-50%));
+	// 	font-size: 16px;
+	// 	font-family: "Font Awesome 6 Pro";
+	// }
 
 	i {
 		margin-right: 14px;
