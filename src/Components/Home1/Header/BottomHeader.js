@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { HiMiniBars3BottomLeft } from "react-icons/hi2";
 import { FaAngleDown } from "react-icons/fa6";
 import call from "../../../Assets/img/svg/call.svg";
+import logo from "../../../Assets/img/menu/logo-main.svg";
 import { navigationLinks, yourCategoryArray } from '../../../Data/Data';
 import { Home1Menu } from '../../../svg/svg';
 
@@ -15,9 +16,7 @@ const BottomHeader = ({ isHeaderSticky, handleSidebarOpen }) => {
       <div className="container custom-container-4">
         <div className="row align-items-center">
           <div className="col-xl-3 col-lg-6 col-md-4 col-6">
-            <div
-              className="tp-header-category tp-category-menu tp-header-category-toggle d-none d-xl-block"
-            >
+            <div className="tp-header-category tp-category-menu tp-header-category-toggle d-none d-xl-block">
               <button className="tp-category-menu-btn tp-category-menu-toggle">
                 <span><HiMiniBars3BottomLeft /></span>
                 All Categories <button className="tp_button_down"><FaAngleDown /></button>
@@ -46,7 +45,7 @@ const BottomHeader = ({ isHeaderSticky, handleSidebarOpen }) => {
             </div>
             <div className="tp-header-4__logo d-xl-none">
               <Link to="/" aria-label="E-Solution">
-                eSolution
+                <img src={logo} alt="Logo" />
               </Link>
             </div>
           </div>

@@ -284,14 +284,14 @@
 	text-transform: capitalize;
 	position: relative;
 	@include mixins.transition(0.3s);
-	background: #fff;
+	background: var(--tp-common-white);
 	color: var(--tp-common-black);
 	box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
 
 	&::before {
 		position: absolute;
 		content: "";
-		background: linear-gradient(93.19deg, #ff4d8d 15.64%, #507efb 84.55%);
+		background: var(--tp-theme-5);
 		@include mixins.border-radius(32px);
 		width: 98%;
 		height: 98%;
@@ -328,7 +328,7 @@
 	&__bg {
 		@include mixins.background();
 		padding-top: 80px;
-		padding-bottom: 75px;
+		padding-bottom: 80px;
 		background-image: url("../../img/hero/bg-3-1.png");
 	}
 
@@ -647,7 +647,7 @@
 		font-size: 75px;
 		text-transform: capitalize;
 		margin-bottom: 0;
-		color: #fff;
+		color: var(--tp-common-white);
 
 		@media only screen and (min-width: 1400px) and (max-width: 1599px) {
 			font-size: 65px;
@@ -699,7 +699,7 @@
 			font-size: 20px;
 			line-height: 32px;
 			text-transform: capitalize;
-			color: #ffffff;
+			color: var(--tp-common-white);
 			margin-bottom: 42px;
 
 			@media only screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -914,7 +914,7 @@
 	text-transform: capitalize;
 	position: relative;
 	@include mixins.transition(0.3s);
-	background: #fff;
+	background: var(--tp-common-white);
 	color: var(--tp-common-black);
 
 	@media (max-width: 767px) {
@@ -932,7 +932,7 @@
 	&::before {
 		position: absolute;
 		content: "";
-		background: linear-gradient(93.19deg, #ff4d8d 15.64%, #507efb 84.55%);
+		background: var(--tp-theme-5);
 		@include mixins.border-radius(32px);
 		width: 98%;
 		height: 98%;

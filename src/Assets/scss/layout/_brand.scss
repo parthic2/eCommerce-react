@@ -44,7 +44,7 @@
 			position: absolute;
 			height: 100%;
 			width: 100px;
-			background: linear-gradient(90deg, #fff 0, rgba(255, 255, 255, 0));
+			background: linear-gradient(90deg, var(--tp-common-white) 0, rgba(255, 255, 255, 0));
 			z-index: 2;
 			content: "";
 		}
@@ -83,7 +83,7 @@
 			position: absolute;
 			height: 100%;
 			width: 300px;
-			background: linear-gradient(90deg, #fff 100px, rgba(255, 255, 255, 0));
+			background: linear-gradient(90deg, var(--tp-common-white) 100px, rgba(255, 255, 255, 0));
 			z-index: 2;
 			content: "";
 		}
@@ -95,7 +95,7 @@
 			&::before,
 			&::after {
 				width: 100px;
-				background: linear-gradient(90deg, #fff 10px, rgba(255, 255, 255, 0));
+				background: linear-gradient(90deg, var(--tp-common-white) 10px, rgba(255, 255, 255, 0));
 			}
 		}
 
@@ -135,7 +135,7 @@
 			box-shadow: 19px 20px 34px 0 rgba(164, 160, 196, 0.19);
 			background: linear-gradient(90deg,
 					rgba(255, 255, 255, 0) 0%,
-					#ffffff 100%);
+					var(--tp-common-white) 100%);
 			pointer-events: none;
 
 			@media only screen and (max-width: 767px) {
@@ -192,7 +192,7 @@
 // index3.html
 .tp-brand-5 {
 	&__bg {
-		background-color: #fff;
+		background-color: var(--tp-common-white);
 		border-top: 1px solid #f6eef9;
 	}
 

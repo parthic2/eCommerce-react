@@ -4,6 +4,7 @@ import scan from "../../../Assets/img/footer/thumb-sm.png";
 import appStore from "../../../Assets/img/footer/thumb-sm-2.png";
 import gPlay from "../../../Assets/img/footer/thumb-sm-3.png";
 import card from "../../../Assets/img/footer/thumb-sm-4.png";
+import logo from "../../../Assets/img/menu/logo-main.svg";
 import CopyRight from './CopyRight';
 import { featureItems } from '../../../Data/Data';
 import { EmailLogo } from '../../../svg/svg';
@@ -56,7 +57,7 @@ const Footer = () => {
               <div className="tp-footer-4__widget footer-col-9">
                 <div className="tp-footer-4__logo">
                   <Link to="/" aria-label="E-Solution">
-                    eSolution
+                    <img src={logo} alt="Logo" />
                   </Link>
                 </div>
                 <div className="tp-footer-4__text">

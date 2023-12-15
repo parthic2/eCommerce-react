@@ -266,7 +266,7 @@
 			font-weight: 500;
 			font-size: 15px;
 			margin-left: 12px;
-			color: #9695a0;
+			color: var(--tp-grey-5);
 		}
 	}
 
@@ -289,7 +289,7 @@
 		height: 40px;
 		font-weight: 500;
 		font-size: 14px;
-		color: #fff;
+		color: var(--tp-common-white);
 		text-align: center;
 		line-height: 40px;
 		@include mixins.border-radius(20px);
@@ -494,14 +494,14 @@
 
 		del {
 			font-size: 15px;
-			color: #9695a0;
+			color: var(--tp-grey-5);
 		}
 	}
 
 	&__icon a {
 		width: 38px;
 		height: 37px;
-		border: 1px solid #ededed;
+		border: 1px solid var(--tp-border-4);
 		@include mixins.border-radius(5px);
 		display: inline-block;
 		line-height: 29px;

@@ -275,7 +275,7 @@
 			content: "";
 			width: 40px;
 			height: 1px;
-			background: #d9d9d9;
+			background: var(--tp-dot);
 			display: inline-block;
 			margin-right: 30px;
 			@include mixins.transform(translateY(-40px));
@@ -285,7 +285,7 @@
 			content: "";
 			width: 40px;
 			height: 1px;
-			background: #d9d9d9;
+			background: var(--tp-dot);
 			display: inline-block;
 			margin-left: 30px;
 			@include mixins.transform(translateY(-40px));

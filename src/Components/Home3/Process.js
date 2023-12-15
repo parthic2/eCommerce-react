@@ -3,7 +3,7 @@ import { process } from '../../Data/Data';
 
 const Process = () => {
   return (
-    <div className="tp-feature-3__area pt-30 pb-55">
+    <div className="tp-feature-3__area pt-30 pb-30">
       <div className="tp-feature-3__plr">
         <div className="container-fluid g-0">
           <div className="row">

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { IoIosSearch } from "react-icons/io";
 import { CiHeart } from "react-icons/ci";
 import { LiaRandomSolid } from "react-icons/lia";
+import logo from "../../../Assets/img/menu/logo-main.svg";
 import bag from "../../../Assets/img/svg/bag.svg";
 import user from "../../../Assets/img/svg/user.svg";
 
@@ -30,7 +31,7 @@ const TopHeader = () => {
           <div className="col-xxl-4 col-xl-6 col-lg-6 col-md-6 col-6 text-lg-center">
             <div className="tp-header-5-logo">
               <Link to="/" aria-label="E-Solution">
-                eSolution
+                <img src={logo} alt="Logo" />
               </Link>
             </div>
           </div>
@@ -41,9 +42,7 @@ const TopHeader = () => {
                   <div className="tp-header-middle-5__icon-wrap d-none d-xl-block">
                     <div className="tp-header-middle-5__icon d-flex align-items-center justify-content-end">
                       <Link to="/" aria-label="User Icon">
-                        <div
-                          className="tp-header-middle-4__icon icon-space p-relative"
-                        >
+                        <div className="tp-header-middle-4__icon icon-space p-relative">
                           <img src={user} alt="user" />
                         </div>
                       </Link>
@@ -68,9 +67,7 @@ const TopHeader = () => {
                           <span>
                             <img src={bag} alt="bag" />
                           </span>
-                          <div
-                            className="tp-header-middle-4__icon-text red-color"
-                          >
+                          <div className="tp-header-middle-4__icon-text red-color">
                             <span>0</span>
                           </div>
                         </div>

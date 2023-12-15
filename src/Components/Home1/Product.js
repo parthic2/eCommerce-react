@@ -8,7 +8,7 @@ const Product = () => {
       <div className="container custom-container-3">
         <div className="row">
           {features.map((feature, index) => (
-            <div key={index} className="col-xl-4 col-lg-6 col-md-6 mb-30 wow tpfadeUp" data-wow-duration={feature.duration} data-wow-delay={feature.delay}>
+            <div key={index} className="col-xl-4 col-lg-6 col-md-6 spacing-feature wow tpfadeUp" data-wow-duration={feature.duration} data-wow-delay={feature.delay}>
               <div className="tp-feature-4__item p-relative">
                 <div className="tp-feature-4__thumb">
                   <img

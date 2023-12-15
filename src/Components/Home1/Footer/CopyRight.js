@@ -16,7 +16,7 @@ const CopyRight = () => {
               <div className="tp-copyright-4__left-box text-center text-md-start">
                 <span>
                   <strong>© 2023</strong>{" "}
-                  Powered by eSolution . All Rights
+                  Powered by ABC . All Rights
                   Reserved.
                 </span>
               </div>
@@ -27,10 +27,10 @@ const CopyRight = () => {
               data-wow-delay=".3s"
             >
               <div className="tp-copyright-4__social-box text-center">
-                <Link to="/"><FaFacebookF /> </Link>
-                <Link to="/"><FaVimeoV /></Link>
-                <Link to="/"><FaTwitter /></Link>
-                <Link to="/"><FaLinkedinIn /></Link>
+                <Link to="https://facebook.com/" aria-label="Facebook"><FaFacebookF /></Link>
+                <Link to="https://vimeo.com/" aria-label="Vimeo"><FaVimeoV /></Link>
+                <Link to="https://twitter.com/" aria-label="Twitter"><FaTwitter /></Link>
+                <Link to="https://linkedin.com/" aria-label="Linkedin"><FaLinkedinIn /></Link>
               </div>
             </div>
             <div

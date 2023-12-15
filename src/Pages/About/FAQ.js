@@ -14,7 +14,7 @@ const FAQ = () => {
   };
 
   return (
-    <div className="tp-faq__area pb-70">
+    <div className="tp-faq__area pb-90">
       <div className="container">
         <div className="row">
           <div className="col-xl-12">

@@ -3,7 +3,7 @@
 
 .tp-choose-6 {
 	&__item-wrap {
-		background: #fff;
+		background: var(--tp-common-white);
 		box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.08);
 
 		&.space {
@@ -157,7 +157,7 @@
 	text-transform: capitalize;
 	position: relative;
 	@include mixins.transition(0.3s);
-	background: linear-gradient(93.19deg, #ff4d8d 15.64%, #507efb 84.55%);
+	background: var(--tp-theme-5);
 	color: var(--tp-common-white);
 
 	&:hover {

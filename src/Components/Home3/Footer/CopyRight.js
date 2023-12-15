@@ -10,13 +10,13 @@ const CopyRight = () => {
           <div className="col-xl-12 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".3s">
             <div className="tp-copyright__wrapper d-flex align-items-center justify-content-sm-between justify-content-center">
               <div className="tp-copyright__social-box d-none d-lg-block">
-                <Link to="/Home3"><FaFacebookF /> </Link>
-                <Link to="/Home3"><FaVimeoV /></Link>
-                <Link to="/Home3"><FaTwitter /></Link>
-                <Link to="/Home3"><FaLinkedinIn /></Link>
+                <Link to="https://facebook.com/" aria-label="Facebook"><FaFacebookF /></Link>
+                <Link to="https://vimeo.com/" aria-label="Vimeo"><FaVimeoV /></Link>
+                <Link to="https://twitter.com/" aria-label="Twitter"><FaTwitter /></Link>
+                <Link to="https://linkedin.com/" aria-label="Linkedin"><FaLinkedinIn /></Link>
               </div>
               <div className="tp-copyright__text text-center">
-                <span>Full Copyright & Design By <i>@eSolution</i> – 2023</span>
+                <span>Full Copyright & Design By <i>@ABC</i> – 2023</span>
               </div>
             </div>
           </div>

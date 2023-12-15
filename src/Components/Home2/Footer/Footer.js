@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import CopyRight from './CopyRight';
 import MapSection from './MapSection';
 import { EmailLogo } from '../../../svg/svg';
+import logo from "../../../Assets/img/menu/logo-white.svg";
 import { FaFacebookF, FaLinkedinIn, FaTwitter, FaVimeoV } from 'react-icons/fa6';
 
 const Footer = () => {
@@ -39,7 +40,7 @@ const Footer = () => {
                 <div className="tp-footer-2__widget footer-col-5">
                   <div className="tp-footer-2__logo">
                     <Link to="/Home2" aria-label="E-Solution">
-                      eSolution
+                      <img src={logo} alt="Logo" />
                     </Link>
                   </div>
                   <div className="tp-footer-2__text">
@@ -50,10 +51,10 @@ const Footer = () => {
                     <Link to="/Home2">+ (445) 523-0134</Link>
                   </div>
                   <div className="tp-footer-2__social-box">
-                    <Link to="/Home2" aria-label="Facebook"><FaFacebookF /></Link>
-                    <Link to="/Home2" aria-label="Vimeo"><FaVimeoV /></Link>
-                    <Link to="/Home2" aria-label="Twitter"><FaTwitter /></Link>
-                    <Link to="/Home2" aria-label="Linkedin"><FaLinkedinIn /></Link>
+                    <Link to="https://facebook.com/" aria-label="Facebook"><FaFacebookF /></Link>
+                    <Link to="https://vimeo.com/" aria-label="Vimeo"><FaVimeoV /></Link>
+                    <Link to="https://twitter.com/" aria-label="Twitter"><FaTwitter /></Link>
+                    <Link to="https://linkedin.com/" aria-label="Linkedin"><FaLinkedinIn /></Link>
                   </div>
                 </div>
               </div>

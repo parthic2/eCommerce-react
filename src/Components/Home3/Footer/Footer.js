@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import shape from "../../../Assets/img/footer/shape-1-1.png";
 import card from "../../../Assets/img/footer/footer-1-1.png";
 import CopyRight from './CopyRight';
+import logo from "../../../Assets/img/menu/logo-main.svg";
 import { Call, EmailLogo, Mail, UpArrow } from '../../../svg/svg';
 
 const Footer = () => {
@@ -18,7 +19,7 @@ const Footer = () => {
               <div className="tp-footer__widget z-index footer-col-1">
                 <div className="tp-footer__logo">
                   <Link to="/Home3" aria-label="E-Solution">
-                    eSolution
+                    <img src={logo} alt="Logo" />
                   </Link>
                 </div>
                 <div className="tp-footer__text">

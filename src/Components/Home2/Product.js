@@ -16,7 +16,7 @@ const Product = () => {
       <div className="container custom-container-1">
         <div className="row">
           <div className="col-xl-12">
-            <div className="tp-catagori-2__section-title text-center mb-50">
+            <div className="tp-catagori-2__section-title text-center mb-10">
               <span className="tp-gradiant-section-subtitle">Featured Products</span>
               <h1 className="tp-section-title-2"> Featured {" "}
                 <span className="p-relative"> products

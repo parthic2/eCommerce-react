@@ -24,11 +24,7 @@
 
 .tp-header {
 	&__logo {
-		font-size: 15px;
-
-		a:hover {
-			color: var(--tp-common-black);
-		}
+		width: 100px;
 	}
 
 	&__transparent {
@@ -36,7 +32,7 @@
 		left: 0;
 		right: 0;
 		z-index: 11;
-		border-bottom: 1px solid #fff;
+		border-bottom: 1px solid var(--tp-common-white);
 	}
 
 	&__main-menu {
@@ -72,7 +68,7 @@
 				list-style-type: none;
 				display: inline-block;
 				position: relative;
-				border-right: 1px solid #fff;
+				border-right: 1px solid var(--tp-common-white);
 				padding: 0 28px;
 
 				&:hover .submenu {
@@ -245,7 +241,7 @@
 			display: inline-block;
 			width: 60px;
 			height: 60px;
-			line-height: 60px;
+			line-height: 55px;
 			text-align: center;
 			@include mixins.border-radius(50%);
 			background: var(--tp-common-purple);
@@ -290,11 +286,8 @@
 		&__logo-3 {
 			position: relative;
 			top: 8px;
-			left: 34px;
-			width: 101px;
-			height: 100%;
-			font-size: 20px;
-			color: var(--tp-common-white);
+			left: 42px;
+			width: 80px;
 
 			&-box span {
 				position: absolute;
@@ -337,8 +330,7 @@
 	}
 
 	&-3__logo {
-		width: 110px;
-		height: auto;
+		width: 100px;
 	}
 
 	&__chat-box {
@@ -540,7 +532,7 @@
 
 .tp-header-4 {
 	&__logo {
-		width: 110px;
+		width: 100px;
 		height: auto;
 	}
 
@@ -663,8 +655,7 @@
 
 		a {
 			display: inline-block;
-			width: 127px;
-			height: 100%;
+			width: 100px;
 
 			&:hover {
 				color: var(--tp-common-black);
@@ -689,7 +680,7 @@
 
 		a {
 			display: inline-block;
-			color: #fff;
+			color: var(--tp-common-white);
 			font-size: 14px;
 			font-weight: 500;
 			text-transform: capitalize;
@@ -727,7 +718,6 @@
 			position: relative;
 			color: var(--tp-common-white);
 			background-color: var(--tp-common-purple);
-			@include mixins.border-radius(4px 4px 0 0);
 			width: 100%;
 			border: none;
 
@@ -738,15 +728,6 @@
 					font-size: 23px;
 				}
 			}
-
-			// &::after {
-			// 	position: absolute;
-			// 	content: "\f107";
-			// 	right: 30px;
-			// 	top: 50%;
-			// 	@include mixins.transform(translateY(-50%));
-			// 	font-family: "Font Awesome 6 Pro";
-			// }
 
 			&:hover {
 				background-color: #ff8717;
@@ -760,7 +741,7 @@
 				top: 100%;
 				left: 0;
 				width: 100%;
-				background: #ffffff;
+				background: var(--tp-common-white);
 				box-shadow: 0px 1px 3px rgba(1, 15, 28, 0.1);
 				z-index: 9;
 				display: none;
@@ -770,17 +751,6 @@
 					list-style: none;
 					padding: 0 30px;
 					position: relative;
-
-					// &.has-dropdown>a:not(.mega-menu-title)::after {
-					// 	position: absolute;
-					// 	content: "\f105";
-					// 	right: 0;
-					// 	top: 50%;
-					// 	font-family: "Font Awesome 6 Pro";
-					// 	font-size: 16px;
-					// 	@include mixins.transform(translateY(-50%));
-					// 	@include mixins.transition(0.3s);
-					// }
 
 					a {
 						font-size: 15px;

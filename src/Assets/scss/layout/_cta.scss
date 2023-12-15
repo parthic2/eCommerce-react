@@ -34,7 +34,7 @@
 		font-size: 45px;
 		line-height: 1.2;
 		text-transform: capitalize;
-		color: #ffffff;
+		color: var(--tp-common-white);
 		margin-bottom: 30px;
 
 		@media only screen and (min-width: 992px) and (max-width: 1199px),
@@ -85,17 +85,17 @@
 	text-transform: capitalize;
 	position: relative;
 	@include mixins.transition(0.3s);
-	background: #fff;
+	background: var(--tp-common-white);
 	color: var(--tp-common-black);
 
 	&:hover {
-		color: #09052f;
+		color: var(--tp-common-black);
 	}
 
 	&::before {
 		position: absolute;
 		content: "";
-		background: linear-gradient(93.19deg, #ff4d8d 15.64%, #507efb 84.55%);
+		background: var(--tp-theme-5);
 		@include mixins.border-radius(32px);
 		width: 98%;
 		height: 98%;

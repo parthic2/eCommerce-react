@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { CiHeart } from 'react-icons/ci';
 import { Cart } from '../../../svg/svg';
 import user from "../../../Assets/img/svg/user.svg";
+import logo from "../../../Assets/img/menu/logo-main.svg";
 import { useScrollNavbar3 } from '../../../Hooks/useScrollnavbar1';
 import { navigationLinks } from '../../../Data/Data';
 import { FaBars, FaXmark } from 'react-icons/fa6';
@@ -36,7 +37,7 @@ const Header = () => {
                   <div className="tp-header__left-box d-flex align-items-center">
                     <div className="tp-header__logo">
                       <Link to="/Home3" aria-label="E-Solution">
-                        eSolution
+                        <img src={logo} alt="Logo" />
                       </Link>
                     </div>
                   </div>

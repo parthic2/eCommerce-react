@@ -3,7 +3,6 @@ import Breadcrumb from '../../Common/Breadcrumb';
 import Footer from '../../Components/Home1/Footer/Footer';
 import Header from '../../Components/Home1/Header/Header';
 import Banner from '../../Common/Banner';
-import shape from "../../Assets/img/cta/shape.png";
 import arrow from "../../Assets/img/svg/arrow.svg";
 import { Link } from 'react-router-dom';
 import { servicesData } from '../../Data/Data';
@@ -29,15 +28,6 @@ const Service = () => {
                   <div className="tp-service-3__icon d-flex align-items-center justify-content-between">
                     <span className="p-relative">
                       {service.icon}
-                      <span className="tp-service-3__icon-shape">
-                        <img
-                          src={shape}
-                          alt="shape"
-                          className="img-fluid"
-                          width="70"
-                          height="56"
-                        />
-                      </span>
                     </span>
                     <Link to="/">
                       <img src={arrow} alt="arrow" />

@@ -4,7 +4,7 @@ import TrendsContent from './TrendsContent';
 
 const TrendsProduct = () => {
   return (
-    <div className="tp-trend-product-5__area pb-65">
+    <div className="tp-trend-product-5__area pb-90">
       <div className="container custom-container-4">
         <div className="tp-trend-product-5__top-mb">
           <div className="row align-items-center">

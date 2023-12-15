@@ -3,7 +3,7 @@ import { chooseUsData } from '../../Data/Data';
 
 const ChooseUs = () => {
   return (
-    <div className="tp-choose-6__area pt-50 pb-90">
+    <div className="tp-choose-6__area pb-90">
       <div className="container">
         <div className="row">
           <div className="col-xl-12">

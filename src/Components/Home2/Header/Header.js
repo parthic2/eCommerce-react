@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { CiHeart } from "react-icons/ci";
-import { FaBars,FaXmark } from "react-icons/fa6";
+import { FaBars, FaXmark } from "react-icons/fa6";
 import Sidebar from '../Sidebar/Sidebar';
 import { navigationLinks } from '../../../Data/Data';
 import user from "../../../Assets/img/svg/user.svg";
+import logo from "../../../Assets/img/menu/logo-main.svg";
+import logoWhite from "../../../Assets/img/menu/logo-white.svg";
 import { LogoBg, Cart, LetsTalk } from "../../../svg/svg";
 import { useScrollNavbar2 } from '../../../Hooks/useScrollnavbar1';
 
@@ -37,12 +39,16 @@ const Header = () => {
               <div className="col-xl-3 col-lg-6 col-md-4 col-6">
                 <div className="tp-header-2__logo-3-box z-index-9 d-none d-xl-block p-relative">
                   <Link to="/Home2" aria-label="E-Solution">
-                    <div className="tp-header-2__logo-3 z-index">eSolution</div>
+                    <div className="tp-header-2__logo-3 z-index">
+                      <img src={logoWhite} alt="Logo" />
+                    </div>
                     <span><LogoBg /></span>
                   </Link>
                 </div>
                 <div className="tp-header-3__logo d-xl-none">
-                  <Link to="/Home2" aria-label="E-Solution">eSolution</Link>
+                  <Link to="/Home2" aria-label="E-Solution">
+                    <img src={logo} alt="Logo" />
+                  </Link>
                 </div>
               </div>
               <div className="col-xl-6 d-none d-xl-block text-center">

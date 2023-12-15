@@ -4,7 +4,7 @@ import { categoryData } from '../../Data/Data';
 
 const Categories = () => {
   return (
-    <div className="tp-product-4__area pt-120 pb-90 grey-bg-2">
+    <div className="tp-product-4__area pt-90 pb-90 grey-bg-2">
       <div className="container custom-container-3">
         <div className="row">
           <div className="col-xl-12">

@@ -4,7 +4,7 @@ import { blogData } from '../../Data/Data';
 
 const Blog = () => {
   return (
-    <div className="tp-blog-4__area pt-115 pb-65">
+    <div className="tp-blog-4__area pt-90 pb-90">
       <div className="container custom-container-3">
         <div className="row">
           <div className="col-xl-12">
@@ -24,7 +24,7 @@ const Blog = () => {
         </div>
         <div className="row">
           {blogData.map((blog, index) => (
-            <div key={index} className="col-xl-4 col-lg-4 col-md-6 mb-50 wow tpfadeUp" data-wow-duration={blog.duration} data-wow-delay={blog.delay}>
+            <div key={index} className="col-xl-4 col-lg-4 col-md-6 spacing-blog wow tpfadeUp" data-wow-duration={blog.duration} data-wow-delay={blog.delay}>
               <div className="tp-blog-4__item">
                 <div className="tp-blog-4__thumb p-relative">
                   <Link to="/">

@@ -15,7 +15,7 @@ const Service = () => {
   }, [])
 
   return (
-    <div className="tp-service-2__area pt-120 pb-120">
+    <div className="tp-service-2__area pt-90 pb-90">
       <div className="container">
         <div className="row">
           <div className="col-xl-6 col-lg-6">

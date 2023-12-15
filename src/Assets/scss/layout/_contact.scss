@@ -4,8 +4,8 @@
 .ec-contact {
     &-container {
         padding: 30px;
-        background-color: #fff;
-        border: 1px solid #ededed;
+        background-color: var(--tp-common-white);
+        border: 1px solid var(--tp-border-4);
         text-align: left;
         @include mixins.border-radius(5px);
         box-shadow: var(--tp-shadow-2);
@@ -28,7 +28,7 @@
 
             input {
                 background-color: transparent;
-                border: 1px solid #ededed;
+                border: 1px solid var(--tp-border-4);
                 color: #444444;
                 font-size: 15px;
                 margin-bottom: 27px;
@@ -46,7 +46,7 @@
 
             textarea {
                 background-color: transparent;
-                border: 1px solid #ededed;
+                border: 1px solid var(--tp-border-4);
                 color: #444444;
                 font-size: 15px;
                 margin-bottom: 27px;
@@ -68,7 +68,7 @@
                 @include mixins.border-radius(0);
                 @include mixins.transition(0.3s);
                 padding: 13px 29px;
-                color: #fff;
+                color: var(--tp-common-white);
                 letter-spacing: 0.05em;
                 border: 2px solid var(--tp-common-purple);
                 background-image: linear-gradient(30deg, var(--tp-common-purple) 50%, transparent 50%);
@@ -80,7 +80,7 @@
                     @include mixins.transition(0.3s);
                     background-position: 100%;
                     color: var(--tp-common-purple);
-                    background-color: #fff;
+                    background-color: var(--tp-common-white);
                     border: 2px solid var(--tp-common-purple);
                 }
             }
@@ -150,12 +150,12 @@
 
 .ec_contact_info {
     margin-bottom: 30px;
-    background-color: #fff;
+    background-color: var(--tp-common-white);
     box-shadow: var(--tp-shadow-2);
     padding: 30px;
     height: 28%;
     @include mixins.border-radius(5px);
-    border: 1px solid #ededed;
+    border: 1px solid var(--tp-border-4);
 
     @media (max-width:991px) {
         margin-top: 30px;

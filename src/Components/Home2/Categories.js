@@ -17,7 +17,7 @@ const Categories = () => {
       <div className="container">
         <div className="row">
           <div className="col-xl-12">
-            <div className="tp-catagori-2__section-title text-center mb-50">
+            <div className="tp-catagori-2__section-title text-center mb-10">
               <span className="tp-gradiant-section-subtitle">
                 Explore all categories
               </span>
@@ -46,7 +46,7 @@ const Categories = () => {
             </div>
           </div>
         </div>
-        <div className="tp-catagori-2__wrapper p-relative mb-75">
+        <div className="tp-catagori-2__wrapper p-relative pb-80">
           <Swiper
             style={{ padding: "20px" }}
             direction="horizontal"

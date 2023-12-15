@@ -43,7 +43,7 @@
 	@include mixins.border-radius(50%);
 	display: grid;
 	place-items: center;
-	font-size: 20px;
+	font-size: 30px;
 	color: var(--tp-common-purple);
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -122,4 +122,12 @@ img {
 
 .bg-shadow {
 	box-shadow: 0px 22px 84px 0px rgba(0, 0, 0, 0.1);
+}
+
+.grey-bg {
+	background: var(--tp-grey-1);
+}
+
+.black-bg-2 {
+	background: var(--tp-common-black-4);
 }

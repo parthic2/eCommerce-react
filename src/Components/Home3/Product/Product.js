@@ -7,7 +7,7 @@ import ProductContent from './ProductContent';
 
 const Product = () => {
   return (
-    <div className="tp-fea-product__area p-relative grey-bg-2 pb-35 pt-115 grey-bg-2">
+    <div className="tp-fea-product__area p-relative grey-bg-2 pb-100 pt-100 grey-bg-2">
       <div className="tp-fea-product__shape-1 d-none d-lg-block">
         <img src={shape1} alt="shape" className="img-fluid" width="83" height="82" />
       </div>

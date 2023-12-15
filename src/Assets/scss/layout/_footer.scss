@@ -1,14 +1,6 @@
 @use "../utils/variables";
 @use "../utils/mixins";
 
-.grey-bg {
-	background: var(--tp-grey-1);
-}
-
-.black-bg-2 {
-	background: var(--tp-common-black-4);
-}
-
 .tp-btn-sm {
 	display: inline-block;
 	height: 58px;
@@ -39,12 +31,8 @@
 	}
 
 	&__logo {
-		padding-bottom: 22px;
-		font-size: 20px;
-
-		a:hover {
-			color: var(--tp-common-black);
-		}
+		padding-bottom: 7px;
+		width: 100px;
 
 		img {
 			max-width: 100%;
@@ -396,7 +384,7 @@
 			content: "";
 			width: 1px;
 			height: 8px;
-			background: #d9d9d9;
+			background: var(--tp-dot);
 			display: inline-block;
 			margin-left: 15px;
 		}
@@ -482,8 +470,7 @@
 
 .tp-footer-4 {
 	&__logo {
-		margin-bottom: 23px;
-		width: 110px;
+		width: 100px;
 		height: auto;
 	}
 
@@ -629,7 +616,7 @@
 		line-height: 46px;
 		letter-spacing: 0.04em;
 		text-transform: uppercase;
-		color: #ffffff;
+		color: var(--tp-common-white);
 		margin-bottom: 0;
 
 		@media only screen and (min-width: 1400px) and (max-width: 1599px) {
@@ -721,18 +708,13 @@
 	}
 
 	&__ptb {
-		padding-top: 75px;
+		padding-top: 35px;
 		padding-bottom: 35px;
 	}
 
 	&__logo {
 		margin-bottom: 15px;
-		font-size: 20px;
-		color: var(--tp-common-white);
-
-		a:hover {
-			color: var(--tp-common-white);
-		}
+		width: 100px;
 	}
 
 	&__text p {
@@ -792,7 +774,7 @@
 		font-size: 22px;
 		line-height: 28px;
 		text-transform: capitalize;
-		color: #ffffff;
+		color: var(--tp-common-white);
 		margin-bottom: 29px;
 
 		@media only screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -814,7 +796,7 @@
 		a {
 			font-weight: 500;
 			font-size: 16px;
-			color: #ffffff;
+			color: var(--tp-common-white);
 			@include mixins.transition(0.3s);
 
 			@media only screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -854,8 +836,7 @@
 			line-height: 19px;
 			text-decoration-line: underline;
 			text-transform: capitalize;
-			color: #ffffff;
-
+			color: var(--tp-common-white);
 
 			@media only screen and (min-width: 1200px) and (max-width: 1399px),
 			only screen and (min-width: 992px) and (max-width: 1199px),

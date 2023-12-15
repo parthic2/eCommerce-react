@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { FaAngleRight, FaBars, FaLocationDot, FaEnvelope, FaPhoneFlip, FaPaperPlane, FaFacebookF, FaTwitter, FaInstagram, FaPinterestP } from 'react-icons/fa6';
+import { FaAngleRight, FaBars, FaLocationDot, FaEnvelope, FaPhoneFlip, FaPaperPlane, FaFacebookF, FaTwitter, FaVimeoV, FaLinkedinIn } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
+import logo from "../../../Assets/img/menu/logo-main.svg";
 import { navigationLinks, yourCategoryArray } from '../../../Data/Data';
 
 const Sidebar = () => {
@@ -15,7 +16,7 @@ const Sidebar = () => {
     <>
       <div className="tpoffcanvas__logo">
         <Link to="/" aria-label="logo">
-          eSolution
+          <img src={logo} alt="Logo" />
         </Link>
       </div>
       <div className="tpoffcanvas__title">
@@ -161,10 +162,10 @@ const Sidebar = () => {
       </div>
       <div className="tpoffcanvas__social">
         <div className="social-icon">
-          <Link to="/"><FaTwitter /></Link>
-          <Link to="/"><FaInstagram /></Link>
-          <Link to="/"><FaFacebookF /></Link>
-          <Link to="/"><FaPinterestP /></Link>
+          <Link to="https://facebook.com/" aria-label="Facebook"><FaFacebookF /></Link>
+          <Link to="https://vimeo.com/" aria-label="Vimeo"><FaVimeoV /></Link>
+          <Link to="https://twitter.com/" aria-label="Twitter"><FaTwitter /></Link>
+          <Link to="https://linkedin.com/" aria-label="Linkedin"><FaLinkedinIn /></Link>
         </div>
       </div>
     </>
