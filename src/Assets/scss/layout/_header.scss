@@ -1,3 +1,7 @@
+/** 
+Header Section css
+**/
+
 @use "../utils/variables";
 @use "../utils/mixins";
 
@@ -617,20 +621,6 @@
 						}
 					}
 
-					// &.has-dropdown::after {
-					// 	content: "\f107";
-					// 	font-family: "Font Awesome 6 Pro";
-					// 	display: inline-block;
-					// 	font-size: 14px;
-					// 	font-weight: 400;
-					// 	@include mixins.transition(0.3s);
-					// 	@include mixins.transform(translateY(-1px));
-					// 	color: var(--tp-common-black);
-					// 	position: absolute;
-					// 	top: 37%;
-					// 	right: 8px;
-					// }
-
 					&:hover.has-dropdown::after {
 						@include mixins.transform(rotate(-180deg));
 						color: var(--tp-theme-3);
@@ -905,16 +895,6 @@
 	background-color: var(--tp-common-purple);
 	padding: 20px 20px;
 	border: none;
-
-	// &::after {
-	// 	position: absolute;
-	// 	content: "\f107";
-	// 	right: 20px;
-	// 	top: 50%;
-	// 	@include mixins.transform(translateY(-50%));
-	// 	font-size: 16px;
-	// 	font-family: "Font Awesome 6 Pro";
-	// }
 
 	i {
 		margin-right: 14px;
