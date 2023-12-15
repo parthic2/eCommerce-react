@@ -38,7 +38,7 @@ const Feedback = () => {
   };
 
   return (
-    <div className="rbt-splash-testimonial-area bg-color-white overflow-hidden position-relative">
+    <section className="rbt-splash-testimonial-area bg-color-white overflow-hidden position-relative">
       <div className="container">
         <div className="row align-items-end">
           <div className="col-xl-7 col-lg-7 col-md-6">
@@ -78,7 +78,7 @@ const Feedback = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

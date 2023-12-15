@@ -8,7 +8,7 @@ import { aboutItems } from '../../Data/Data';
 
 const About = () => {
   return (
-    <div className="tp-about__area tp-about__space fix p-relative">
+    <section className="tp-about__area tp-about__space fix p-relative">
       <div className="container">
         <div className="row align-items-center">
           <div className="col-xl-6 col-lg-6">
@@ -72,7 +72,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

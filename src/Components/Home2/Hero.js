@@ -22,7 +22,7 @@ const Hero = () => {
 
   return (
     <>
-      <div className="tp-hero-3__area">
+      <section className="tp-hero-3__area">
         <div className="tp-hero-3__bg p-relative">
           <div className="scroll-bg-2 d-none d-sm-block">
             <img src={whiteBg} alt="hero bg" className="img-fluid" width="260" height="70" />
@@ -62,7 +62,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <Process processRef={processRef} />
     </>

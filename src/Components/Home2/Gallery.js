@@ -9,7 +9,7 @@ import { galleryData } from '../../Data/Data';
 
 const Gallery = () => {
   return (
-    <div className="tp-project-3__area p-relative pt-80 pb-80">
+    <section className="tp-project-3__area p-relative pt-80 pb-80">
       <div className="tp-project-3__shape-1 d-none d-xl-block">
         <img src={shape} alt="shape" className="img-fluid" width="120" height="483" />
       </div>
@@ -84,7 +84,7 @@ const Gallery = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

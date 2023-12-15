@@ -7,7 +7,7 @@ import { Circle } from '../../svg/svg';
 
 const Banner = () => {
   return (
-    <div className="tp-team-3__top-area fix tp-team-3__top-bg p-relative pt-80 pb-80">
+    <section className="tp-team-3__top-area fix tp-team-3__top-bg p-relative pt-80 pb-80">
       <div className="tp-team-3__shape-1 d-none d-xl-block">
         <img src={shape1} alt="shape" className="img-fluid" width="193" height="535" />
       </div>
@@ -65,7 +65,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

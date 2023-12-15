@@ -6,7 +6,7 @@ import { brandImages } from '../../Data/Data';
 
 const Brand = () => {
   return (
-    <div className="tp-brand-5__area tp-brand-5__bg">
+    <section className="tp-brand-5__area tp-brand-5__bg">
       <div className="container-fluid gx-0">
         <Swiper
           direction="horizontal"
@@ -56,7 +56,7 @@ const Brand = () => {
           ))}
         </Swiper>
       </div>
-    </div>
+    </section>
   )
 }
 

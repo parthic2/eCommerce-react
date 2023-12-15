@@ -12,7 +12,7 @@ import { ProductData } from '../../Data/Data';
 
 const Product = () => {
   return (
-    <div className="tp-product-2__area">
+    <section className="tp-product-2__area">
       <div className="container custom-container-1">
         <div className="row">
           <div className="col-xl-12">
@@ -122,7 +122,7 @@ const Product = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

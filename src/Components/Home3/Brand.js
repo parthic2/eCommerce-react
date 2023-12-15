@@ -18,7 +18,7 @@ const Brand = () => {
   ];
 
   return (
-    <div className="rbt-elements-presentation-area overflow-hidden bg-color-white rbt-section-gapBottom pb-80">
+    <section className="rbt-elements-presentation-area overflow-hidden bg-color-white rbt-section-gapBottom pb-80">
       <div className="wrapper">
         <div className="scroll-animation-all-wrapper">
           {brandSections.map((section, sectionIndex) => (
@@ -44,7 +44,7 @@ const Brand = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -14,7 +14,7 @@ const galleryImages = [gallery1, gallery2, gallery3, gallery4, gallery5, gallery
 
 const Gallery = () => {
   return (
-    <div className="tp-instagram-2__area">
+    <section className="tp-instagram-2__area">
       <div className="container-fluid" style={{ paddingLeft: "0", paddingRight: "0" }}>
         <div className="tp-instagram-2-warpper">
           <Swiper
@@ -66,7 +66,7 @@ const Gallery = () => {
           </Swiper>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

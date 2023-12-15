@@ -11,7 +11,7 @@ import { feature } from '../../Data/Data';
 
 const Service = () => {
   return (
-    <div className="tp-feature-2__area fix p-relative pb-80">
+    <section className="tp-feature-2__area fix p-relative pb-80">
       <div className="tp-feature-2__shape-1 d-none d-xl-block">
         <img src={shape1} alt="shape" className="img-fluid" width="105" height="94" />
       </div>
@@ -65,7 +65,7 @@ const Service = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

@@ -9,7 +9,7 @@ import { contentItems, featureData } from '../../Data/Data';
 
 const Feature = () => {
   return (
-    <div className="tp-business__area fix pt-30 pb-30">
+    <section className="tp-business__area fix pt-30 pb-30">
       <div className="tp-business__bg">
         <div className="container">
           <div className="row">
@@ -82,7 +82,7 @@ const Feature = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

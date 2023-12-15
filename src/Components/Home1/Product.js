@@ -4,7 +4,7 @@ import { features } from '../../Data/Data';
 
 const Product = () => {
   return (
-    <div className="tp-feature-4__area pt-90 pb-90">
+    <section className="tp-feature-4__area pt-90 pb-90">
       <div className="container custom-container-3">
         <div className="row">
           {features.map((feature, index) => (
@@ -31,7 +31,7 @@ const Product = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

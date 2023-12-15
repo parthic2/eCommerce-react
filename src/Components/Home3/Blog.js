@@ -5,7 +5,7 @@ import { blogItems } from '../../Data/Data';
 
 const Blog = () => {
   return (
-    <div className="tp-blog__area pt-90 pb-90">
+    <section className="tp-blog__area pt-90 pb-90">
       <div className="container">
         <div className="row">
           <div className="col-xl-12">
@@ -50,7 +50,7 @@ const Blog = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

@@ -13,7 +13,7 @@ const brandImages = [brand1, brand2, brand3, brand4, brand5, brand6, brand7, bra
 
 const Brands = () => {
   return (
-    <div className="tp-brand-6__area pt-90 pb-90">
+    <section className="tp-brand-6__area pt-90 pb-90">
       <div className="container custom-container-4">
         <div className="row">
           <div className="col-xl-12">
@@ -41,7 +41,7 @@ const Brands = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

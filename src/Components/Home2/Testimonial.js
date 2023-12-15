@@ -9,7 +9,7 @@ import { testimonial } from '../../Data/Data';
 
 const Testimonial = () => {
   return (
-    <div className="tp-testimonial-3__area tp-testimonial-3__space p-relative">
+    <section className="tp-testimonial-3__area tp-testimonial-3__space p-relative">
       <div className="tp-testimonial-3__shape-2 d-none d-xl-block">
         <img src={shape1} alt="shape" className="img-fluid" width="108" height="108" />
       </div>
@@ -85,7 +85,7 @@ const Testimonial = () => {
           </Swiper>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

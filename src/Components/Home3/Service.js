@@ -9,7 +9,7 @@ import { serviceItems } from '../../Data/Data';
 
 const Service = () => {
   return (
-    <div className="tp-service__area pb-30 pt-30">
+    <section className="tp-service__area pb-30 pt-30">
       <div className="container-fluid">
         <div className="row">
           <div className="col-xl-12">
@@ -81,7 +81,7 @@ const Service = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

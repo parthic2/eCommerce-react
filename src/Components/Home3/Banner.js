@@ -6,7 +6,7 @@ import { ShopHand } from '../../svg/svg';
 
 const Banner = () => {
   return (
-    <div className="tp-cta__area tp-cta__grey-bg">
+    <section className="tp-cta__area tp-cta__grey-bg">
       <div className="container">
         <div className="tp-cta__bg p-relative">
           <div className="tp-cta__thumb d-none d-xl-block">
@@ -34,7 +34,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

@@ -10,7 +10,7 @@ import { catItems } from '../../Data/Data';
 
 const Categories = () => {
   return (
-    <div className="tp-catagori-2__area p-relative">
+    <section className="tp-catagori-2__area p-relative">
       <div className="tp-catagori-2__shape-1 d-none d-md-block">
         <img src={shape} alt="shape" className="img-fluid" width="12" height="12" />
       </div>
@@ -100,7 +100,7 @@ const Categories = () => {
           </Swiper>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

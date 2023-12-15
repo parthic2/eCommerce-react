@@ -18,7 +18,7 @@ const Hero = () => {
   }, [])
 
   return (
-    <div className={`tp-hero-4__area fix`}>
+    <section className={`tp-hero-4__area fix`}>
       <div className="tp-hero-4__bg p-relative">
         <div className="tp-hero-4__shape-2 d-none d-xl-block">
           <img src={shape42} alt="shape" className="img-fluid" width="83" height="82" />
@@ -89,7 +89,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

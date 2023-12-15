@@ -2,7 +2,7 @@ import React from 'react';
 
 const TextSlider = () => {
   return (
-    <div className="tp-slider-text-3__area tp-slider-text-3__ptb fix">
+    <section className="tp-slider-text-3__area tp-slider-text-3__ptb fix">
       <div className="container-fluid">
         <div className="row">
           <div className="col-xl-12">
@@ -15,7 +15,7 @@ const TextSlider = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

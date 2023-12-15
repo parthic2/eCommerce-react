@@ -4,7 +4,7 @@ import { timeItems } from '../../Data/Data';
 
 const Deals = () => {
   return (
-    <div className="tp-deal-4__area tp-deal-4__bg fix p-relative">
+    <section className="tp-deal-4__area tp-deal-4__bg fix p-relative">
       <div className="tp-deal-4__shape-2 d-none d-xxl-block">
         <img src={require("../../Assets/img/product/deal-shape-4-1.png")} alt="shape" className="img-fluid" />
       </div>
@@ -78,7 +78,7 @@ const Deals = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

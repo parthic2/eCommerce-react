@@ -7,7 +7,7 @@ import { testimonialData } from '../../Data/Data';
 
 const Testimonial = () => {
   return (
-    <div className="tp-testimonial-5__area tp-testimonial-5__space grey-bg-2">
+    <section className="tp-testimonial-5__area tp-testimonial-5__space grey-bg-2">
       <div className="container custom-container-4">
         <div className="row">
           <div className="col-xl-12">
@@ -87,7 +87,7 @@ const Testimonial = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
